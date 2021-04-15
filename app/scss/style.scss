@@ -1,0 +1,13 @@
+/** Оснавные настройки */
+body{
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+}
+
+.test{
+    text-align: center;
+    &__box{
+        margin: 0;
+     }
+}
