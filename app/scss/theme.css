@@ -1,0 +1,55 @@
+@charset "UTF-8"; 
+:root {
+  --Gilroy: 'Gilroy', Gadget, sans-serif;
+  --Cera: 'Houschka Rounded Alt', Gadget, sans-serif; /* // не нашёл пока */
+  --border-radius: 0px;
+  --border-radius: 0px;
+  --color_bg: transparent;
+  --color_text: #222939;
+  --color_bg_content: #ffffff;
+  --color_bg_all: #ffffff;
+} 
+body {
+  font-family: var(--Gilroy);
+  font-size: 18px;
+  color: #313131;
+  background-color: #ffffff;
+}  
+button, input, optgroup, select, textarea {
+  font-family: var(--Gilroy);
+  background-color: white;
+  color: #1e1e1e;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a, area, button, [role="button"], input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+  background-color: white;
+  color: #1e1e1e;
+}  
+input {
+  border-color: #1e1e1e;
+}  
+button, input[type="submit"] {
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+} 
+button:hover, input[type="submit"]:hover {
+  opacity: 0.8;
+} 
+[class*='bttn-'] {
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  font-family: inherit;
+  overflow: hidden;
+} 
+[class*='bttn-'][disabled] {
+  opacity: 0.5;
+}

@@ -1,18 +1,18 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test git</title>
-    <link rel="preload" href="css/fonts.css" as="style">
+    <title>Site</title>
+    <!-- <link rel="preload" href="css/fonts.css" as="style">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/normalise.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/normalise.css"> 
     <link rel="stylesheet" type="text/css" href="css/spider.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
+
     <link rel="stylesheet" type="text/css" href="css/swiper.css">
     <link rel="stylesheet" type="text/css" href="css/aos.css">
     <link rel="stylesheet" type="text/css" href="css/fancybox.css">
@@ -20,583 +20,907 @@
     <link rel="stylesheet" type="text/css" href="css/mmenu-light.css">
 
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"> --> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"> 
+    
 </head>
 
 <body class="template-is-index">
     <div id="page">
-        <header class="header-wrapper site-header">
-            <div class="container">
-                <div class="row flex-top">
-                    <a class="burger-mobile hide show-sm cell-1-sm"
-                        href="#menu"><span></span>
-                    </a>
-                    <div
-                        class="site-header__side site-header__side_left cell-4 hide-sm">
-                        <div class="header_side_links__wrap cell-12">
-                            <div class="header_side_link">
-                                <a href="catalog.html">Каталог</a>
-                            </div>
-                            <div class="header_side_link">
-                                <a href="tovar.html">Товар</a>
-                            </div>
-                            <div class="header_side_link">
-                                <a href="about.html">О нас</a>
-                            </div>
+        <header class="header-wrapper site-header site-header_scrolled">
+            <div class="container">  
+                <!-- Мобильное сайд-меню 1 -->
+                <nav id="mmenu1" data-mmenu-title="Меню">
+                    <ul>
+                        <a href="/index.html" class="logotype in-mobile">
+                            <img src="assets/logo-icon-only-black.svg" alt="">
+                        </a> 
+                        <li class="mmenu__item"><a href="catalog.html">
+                                Демо каталог</a>
+                        </li>
+                        <li class="mmenu__item"><a href="tovar-card.html">
+                                Демо Товар</a>
+                        </li> 
+                        <li class="mmenu__item"><a href="about.html">
+                                Демо о компании</a>
+                        </li>
+                        <li class="mmenu__item"><a href="catalog-complex.html">
+                                Демо комплекс каталог</a>
+                        </li>
+                        <li class="mmenu__item"><a href="complex-card.html">
+                                Демо Комплекс</a>
+                        </li>
+                        <li class="mmenu__item"><a href="portfolio.html">
+                                Демо Портфолио</a>
+                        </li>
+                        <li class="mmenu__item"><a href="oplata-dostavka.html">
+                                Оплата и доставка</a>
+                        </li>
+                        <li class="mmenu__item"><a href="news.html">
+                                Демо Новости</a>
+                        </li>
+                        <li class="mmenu__item"><a href="news-card.html">
+                                Демо Новость</a>
+                        </li>
+                        <li class="mmenu__item"><a href="contact.html">
+                                Демо Контакты</a>
+                        </li>
+                        <li class="mmenu__item"><a href="basket.html">
+                                Демо Корзина</a>
+                        </li>
+                        <li class="mmenu__item"><a href="basket-checkout.html">
+                                Демо Оформление заказа</a>
+                        </li> 
+        
+                        <li class="mobile__additional-info">
+                            <div class="phone-call">
+                                <div class="phone-call__number">
+                                    <a href="tel:+74951500454" class="phone-call__link">8 495 150-04-54</a> 
+                                </div>
+                                <a href="tel:+74951500454" class="btn btn-green phone-call__zakazat">Заказать звонок</a>
+                            </div> 
+                        </li>
+        
+                    </ul>
+                </nav>
+                <!-- /end Мобильное сайд-меню 1 -->
+                
+                <!-- Мобильное сайд-меню 2 (каталог) -->
+                <nav id="mmenu2" data-mmenu-title="Каталог">
+                    <ul>
+                        <div class="mmenu__header">
+                            Каталог
                         </div>
-
-                        <div class="header_side__block cell-6">
-                            <span>Розничный магазин:</span>
-                            <div class="link-tel__wrap">
-                                <a class="link-tel" href="tel:+74959245530"> +7
-                                    (495) <b>
-                                        924-55-30</b></a>
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <span>Юр. лица / регионы:</span>
-                            <div class="link-tel__wrap">
-                                <a class="link-tel" href="tel:+74959245530"> +7
-                                    (495) <b>
-                                        772-50-86</b></a>
-                                <i class="fas fa-phone"></i>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div class="cell-4 cell-10-sm inline-middle flex-center">
-                        <a href="index.html" class="site-header__logo hide-sm"
-                            title="Компания Элит-Инструмент">
-                            <img src="assets/logo-elite.svg"
-                                alt="Компания Элит-Инструмент">
+                        <li class="mmenu__item">
+                            <a href="#">Hifi Оборудование</a>
+                        </li>
+    
+                        <li class="mmenu__item"> 
+                            <a href="#" class="mmenu__link mmenu__link_hover">Системы трансляции и оповещения</a>
+                            <ul> 
+                                <div class="mmenu__header">
+                                    Сигнализации
+                                </div>
+                                <a href="#" class="mmenu__link-to-catalog">Перейти в категорию “Системы трансляции и оповещения”</a> 
+                                <li>
+                                    <a href="#">Аксессуары</a> 
+                                </li> 
+                                <li>
+                                    <a href="#">Трансляционные акустические системы</a> 
+                                </li> 
+                                <li> 
+                                    <a href="#">Трансляционные матрицы</a> 
+                                </li> 
+                                <li> 
+                                    <a href="#">Трансляционные проигрыватели</a> 
+                                </li> 
+                                <li>
+                                    <a href="#">Трансляционные усилители</a>
+                                </li> 
+                            </ul> 
+                        </li>   
+                        <li class="mmenu__item"><a href="#">
+                            Звуковое оборудование</a>
+                        </li>
+                        <li class="mmenu__item"><a href="#">
+                            Звукоизоляция помещений</a>
+                        </li> 
+                        <li class="mmenu__item"><a href="#">
+                            Кинотеатральное оборудование</a>
+                        </li>
+                        <li class="mmenu__item"><a href="#">
+                            Конференционные системы</a>
+                        </li>
+                        <li class="mmenu__item"><a href="#">
+                            Конференционные системы</a>
+                        </li>
+                        <li class="mmenu__item"><a href="#">
+                            Конференционные системы</a>
+                        </li>
+                        <li class="mmenu__item"><a href="#">
+                            Конференционные системы</a>
+                        </li>   
+                    </ul>
+                </nav>
+                <!-- /end Мобильное сайд-меню 2 (каталог) -->
+                
+                <!-- Десктоп шапка -->
+                <nav class="site-header__top">
+                    <div class="row">
+                        <a class="burger-mobile"
+                            href="#menu">
+                            <span></span>
                         </a>
-                        <a class="logo-text-only hide show-flex-sm flex-center flex-middle"
-                            href="">
-                            <img alt="Компания Элит-Инструмент"
-                                src="assets/logo-text-only.svg">
+                        <a href="index.html" class="site-header__logo"
+                            title="Логотип">
+                            <img src="images/logo-site.svg" alt="Логотип">
+                            <img src="images/logo-site_negative.svg" alt="Логотип">
                         </a>
-                    </div>
-
-                    <div
-                        class="site-header__side site-header__side_left cell-4 hide-sm container"> 
-                        <div class="header_side_links__wrap cell-12">
-                            <div class="header_side_link"><a
-                                    href="catalog.html">Каталог</a>
-                            </div>
-                            <div class="header_side_link"><a
-                                    href="tovar.html">Товар</a></div>
-                            <div class="header_side_link"><a href="about.html">О
-                                    нас</a></div>
-                        </div>
-
-                        <div class="header_side__block cell-6">
-                            <span>Время работы:</span>
-                            <div class="clock-info__wrap">
-                                <p> Пн-Чт <b>9:30 - 18:00</b><br>
-                                    Пт <b>9:30 - 17:30</b><br>
-                                    Выходные: <b>Сб, Вс</b></p>
-                                <a class="link-callback"
-                                    href="tel:+74959245530"><b>Обратный
-                                        звонок</b></a>
-                                <i class="fas fa-clock"></i>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="cell-2 cell-3-md hide-sm logo-icon-only">
-                </div>
-            </div>
-            <div class="site-header__mainnav hide-sm">
-                <div class="container">
-                    <nav class="row is-grid mainnav_collapsedline">
-                        <div class="cell-2 cell-3-md dl-menuwrapper">
-
-                            <button class="dl-trigger">
-                                <i class="burger-icon"></i>
-                                <i class="close-icon"></i>
-                                <i class="close"></i>
-                                <b>Все каталоги</b>
-                            </button>
-                        </div>
-                        <div class="cell-4 search-menu">
-                            <form action="/search" method="get"
-                                class="search_widget">
-                                <div class="inpt-group">
-                                    <div class="search_widget-result">
+                        <!-- in mobile -->
+                        <ul class="mtop-links">
+                            <li class="mtop-links__item">
+                                <a class="mtop-links__link icon-search" href="#">
+                                    <div class="icon">
                                     </div>
-                                    <button type="submit"
-                                        class="bttn-prim inpt-group-addon search_widget-submit">
-                                    </button>
-                                    <input type="text" autocomplete="off"
-                                        class="inpt-control inpt search_widget-control"
-                                        name="q" value=""
-                                        placeholder="Поиск по каталогу">
-                                    <select id="order_by"
-                                        class="slct js-filter-trigger s-hidden"
-                                        name="order"
-                                        costum-select-options="true">
-                                        <option value="cat-1">Категория</option>
-                                        <option value="cat-2">Категория 2
-                                        </option>
-                                        <option value="cat-3">Категория 3
-                                        </option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="cell-6 row phones-inline">
-                            <span>Розничный магазин:</span>
-                            <div class="link-tel__wrap">
-                                <a class="link-tel" href="tel:+74959245530"> +7
-                                    (495) <b>
-                                        924-55-30</b></a>
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <span>Юр. лица / регионы:</span>
-                            <div class="link-tel__wrap">
-                                <a class="link-tel" href="tel:+74959245530"> +7
-                                    (495) <b>
-                                        772-50-86</b></a>
-                                <i class="fas fa-phone"></i>
-                            </div>
-                        </div>
-                    </nav>
-                    <ul class="mainnav_links__wrap row">
-                        <li class="header_line_link"><a href="/">О нас</a></li>
-                        <li class="header_line_link"><a href="/">Продукция</a>
-                        </li>
-                        <li class="header_line_link"><a href="/">Прайс-лист</a>
-                        </li>
-                        <li class="header_line_link"><a href="/">Контакты</a>
-                        </li>
-                        <li class="header_line_link"><a href="/">Акции</a></li>
-                        <li class="header_line_link"><a href="/">Кабинет</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mainnav__subcatalog">
-                    <div class="container">
-                        <div class="subcatalog_tab-buttons">
-                            <span>по брендам</span>
-                            <span>по типу</span>
-                        </div>
-                        <div class="row subcatalog_wrap">
-                            <div class="cell-3">
-                                <div class="subcatalog_column">
-                                    <div class="subcatalog_title">Ручные
-                                        инструменты и
-                                        приспособления</div>
-                                    <ul class="subcatalog_list">
-                                        <li>Наборы ручных инструментов</li>
-                                        <li>Гаечные ключи</li>
-                                        <li>Отвертки</li>
-                                        <li>Зажимной инструмент</li>
-                                        <li>Режущий и пильный</li>
-                                        <li>Монтажный и крепежный</li>
-                                        <li>Паяльное оборудование</li>
-                                        <li>Малярный и отделочный</li>
-                                        <li>Для хранения инструмента</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cell-3">
-                                <div class="subcatalog_column">
-                                    <div class="subcatalog_title">Ручные
-                                        инструменты и
-                                        приспособления</div>
-                                    <ul class="subcatalog_list">
-                                        <li>Наборы ручных инструментов</li>
-                                        <li>Гаечные ключи</li>
-                                        <li>Отвертки</li>
-                                        <li>Зажимной инструмент</li>
-                                        <li>Режущий и пильный</li>
-                                        <li>Монтажный и крепежный</li>
-                                        <li>Паяльное оборудование</li>
-                                        <li>Малярный и отделочный</li>
-                                        <li>Для хранения инструмента</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cell-3">
-                                <div class="subcatalog_column">
-                                    <div class="subcatalog_title">Ручные
-                                        инструменты и
-                                        приспособления</div>
-                                    <ul class="subcatalog_list">
-                                        <li>Наборы ручных инструментов</li>
-                                        <li>Гаечные ключи</li>
-                                        <li>Отвертки</li>
-                                        <li>Зажимной инструмент</li>
-                                        <li>Режущий и пильный</li>
-                                        <li>Монтажный и крепежный</li>
-                                        <li>Паяльное оборудование</li>
-                                        <li>Малярный и отделочный</li>
-                                        <li>Для хранения инструмента</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cell-3">
-                                <div class="subcatalog_column">
-                                    <div class="subcatalog_title">Ручные
-                                        инструменты и
-                                        приспособления</div>
-                                    <ul class="subcatalog_list">
-                                        <li>Наборы ручных инструментов</li>
-                                        <li>Гаечные ключи</li>
-                                        <li>Отвертки</li>
-                                        <li>Зажимной инструмент</li>
-                                        <li>Режущий и пильный</li>
-                                        <li>Монтажный и крепежный</li>
-                                        <li>Паяльное оборудование</li>
-                                        <li>Малярный и отделочный</li>
-                                        <li>Для хранения инструмента</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cell-3">
-                                <div class="subcatalog_column">
-                                    <div class="subcatalog_title">Ручные
-                                        инструменты и
-                                        приспособления</div>
-                                    <ul class="subcatalog_list">
-                                        <li>Наборы ручных инструментов</li>
-                                        <li>Гаечные ключи</li>
-                                        <li>Отвертки</li>
-                                        <li>Зажимной инструмент</li>
-                                        <li>Режущий и пильный</li>
-                                        <li>Монтажный и крепежный</li>
-                                        <li>Паяльное оборудование</li>
-                                        <li>Малярный и отделочный</li>
-                                        <li>Для хранения инструмента</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cell-3">
-                                <div class="subcatalog_column">
-                                    <div class="subcatalog_title">Ручные
-                                        инструменты и
-                                        приспособления</div>
-                                    <ul class="subcatalog_list">
-                                        <li>Наборы ручных инструментов</li>
-                                        <li>Гаечные ключи</li>
-                                        <li>Отвертки</li>
-                                        <li>Зажимной инструмент</li>
-                                        <li>Режущий и пильный</li>
-                                        <li>Монтажный и крепежный</li>
-                                        <li>Паяльное оборудование</li>
-                                        <li>Малярный и отделочный</li>
-                                        <li>Для хранения инструмента</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="site-header__mainnav hide show-sm">
-                <div id="dl-menu" class="dl-menuwrapper">
-                    <button class="dl-trigger"><i class="burger-icon"></i>
-                        <i class="close-icon"></i>
-                        <i class="close"></i>
-                        <b>Все каталоги</b>
-                    </button>
-                    <ul class="subcatalog dl-menu">
-
-
-                        <li class="subcatalog__item">
-                            <a href="#">Демо страницы</a>
-
-                            <ul class="dl-submenu">
-
-                                <li class="subcatalog__item">
-                                    <a href="catalog.html">Каталог</a>
-
-                                </li>
-
-                                <li class="subcatalog__item">
-                                    <a href="tovar.html">Товар</a>
-
-                                </li>
-
-                                <li class="subcatalog__item">
-                                    <a href="about.html">О компании</a>
-
-                                </li>
-
-                                <li class="subcatalog__item">
-                                    <a href="#">Подкаталог 2 уровня</a>
-
-                                    <ul class="dl-submenu">
-
-                                        <li class="subcatalog__item">
-                                            <a href="#">Подкатегория 2
-                                                уровня</a>
-
-                                        </li>
-
-                                        <li class="subcatalog__item">
-                                            <a href="#">Подкатегория 2
-                                                уровня</a>
-
-                                        </li>
-
-                                        <li class="subcatalog__item">
-                                            <a href="#">Подкатегория 2
-                                                уровня</a>
-
-                                        </li>
-
-                                        <li class="subcatalog__item">
-                                            <a href="#">Подкатегория 2
-                                                уровня</a>
-
-                                        </li>
-
-                                        <li class="subcatalog__item">
-                                            <a href="#">Подкатегория 2
-                                                уровня</a>
-
-                                        </li>
-
-                                        <li class="subcatalog__item">
-                                            <a href="#">Подкатегория 2
-                                                уровня</a>
-
-                                        </li>
-
-                                    </ul>
-
-                                </li>
-
-                            </ul>
-
-                        </li>
-
-                        <li class="subcatalog__item">
-                            <a href="#"> Гаечные ключи </a>
-
-                            <ul class="dl-submenu">
-
-                                <li class="subcatalog__item">
-                                    <a href="#">Гаечные ключи с открытым зевом
-                                    </a>
-
-                                </li>
-
-                            </ul>
-
-                        </li>
-
-                        <li class="subcatalog__item">
-                            <a href="№">Гаечные ключи </a>
-
-                            <ul class="dl-submenu">
-
-                                <li class="subcatalog__item">
-                                    <a href="#">Динамометрический инструмент</a>
-
-                                </li>
-
-                                <li class="subcatalog__item">
-                                    <a href="#">Прочее</a>
-
-                                    <ul class="dl-submenu">
-
-                                        <li class="subcatalog__item">
-                                            <a href="#">Электрические</a>
-
-                                        </li>
-
-                                    </ul>
-
-                                </li>
-
-                                <li class="subcatalog__item">
-                                    <a href="#">Динамометрический инструмент</a>
-
-                                </li>
-
-                                <li class="subcatalog__item">
-                                    <a href="#">Динамометрический инструмент</a>
-
-                                </li>
-
-                                <li class="subcatalog__item">
-                                    <a href="#">Динамометрический инструмент</a>
-
-                                </li>
-
-                            </ul>
-
-                        </li>
-
-                        <li class="subcatalog__item">
-                            <a href="#">Динамометрический инструмент</a>
-
-                        </li>
-
-                        <li class="subcatalog__item">
-                            <a href="#"> Держатели, адаптеры и соединительные
-                                детали </a>
-
-                        </li>
-
-                        <li class="subcatalog__item">
-                            <a href="#"> Наборы бит </a>
-
-                        </li>
-
-                        <li class="subcatalog__item">
-                            <a href="#"> Наборы бит </a>
-
-                        </li>
-
-                        <li class="subcatalog__item">
-                            <a href="#"> Наборы бит </a>
-
-                        </li>
-
-                        <li class="subcatalog__item">
-                            <a href="#"> Наборы бит </a>
-
-                        </li>
-
-
-                    </ul>
-                </div>
-
-            </div>
-            <nav id="menu" data-mmenu-title="Меню">
-                <ul>
-                    <a href="/index.html" class="logotype in-mobile">
-                        <img src="assets/logo-icon-only-black.svg" alt="">
-                    </a>
-                    <li class="menu__link for-main">
-                        <a href="index.html">Главная</a>
-                    </li>
-
-                    <li class="menu__link"><a href="catalog.html">Демо
-                            Каталог</a>
-                        <ul>
-                            <li>
-                                <a href="#">Шарнирно-губцевый инструмент</a>
-
-                            </li>
-
-                            <li>
-                                <a href="#">Слесарно-монтажный инструмент</a>
-
-                            </li>
-
-                            <li>
-                                <a href="#">Отвертки, ключи, наборы WERA</a>
-
-                            </li>
-
-                            <li>
-                                <a href="#"> Профессиональный ручной инструмент
-                                    Beta (Италия)
                                 </a>
-
+                                <form action="/search" method="get"
+                                    class="search_widget">
+                                    <div class="inpt-group">
+                                        <input type="text" autocomplete="off"
+                                            class="search_widget-control"
+                                            value=""
+                                            placeholder="Что вы ищете?">
+                                        <button type="submit"
+                                            class="search_widget-submit">
+                                        </button>
+                                        <div class="search_widget-result">
+                                        </div>
+                                    </div>
+                                </form>
                             </li>
-
-                            <li>
-                                <a href="#">Tohnichi</a>
-
-
-                            <li><a href="#">Каталог 2</a></li>
-
-
-                    </li>
-
-                    <li>
-                        <a href="#">Шарнирно-губцевый инструмент Orbis Will GmbH
-                            + Co.
-                            KG</a>
-
-                    </li>
-
-                    <li>
-                        <a href="#">Запчасти для
-                            котлов</a>
-
-                    </li>
-
-                </ul>
-
-                </li>
-
-                <li class="menu__link"><a href="tovar.html">
-                        Демо Товар</a>
-                </li>
-
-                <li class="menu__link"><a href="about.html">
-                        Демо о нас</a>
-                </li>
-
-                <li class="menu__link"><a href="#">
-                        Новости</a>
-
-                </li>
-
-                <li class="menu__link"><a href="#"> О компании</a>
-
-                </li>
-
-                <li class="mobile_navline">
-                    <div class="divaloreHeader__icon search"
-                        onclick="$('.search__widget_mobile').show(300);">
-                    </div>
-                    <form action="http://elite-tools.ru/search" method="get"
-                        class="search__widget_mobile">
-                        <div class="inpt-group">
-                            <i class="close"
-                                onclick="$('.search__widget_mobile').toggle();"></i>
-                            <input type="text" autocomplete="off"
-                                class="inpt-control inpt search_widget-control"
-                                name="q" value="" placeholder="Поиск"
-                                data-search-field="" inprocess="false">
-                            <button type="submit"
-                                class="icon-search-black bttn-prim inpt-group-addon search_widget-submit">
+                            <li class="mtop-links__item">
+                                <a class="mtop-links__link icon-cart" href="basket.html">
+                                    <div class="icon">
+                                        <div class="center_icon">
+                                            <span class="counter">0</span>
+                                        </div>
+                                    </div>
                                 </a>
-                        </div>
-                        <input type="hidden" name="lang" value="ru">
-                        <div class="search_widget-result">
-                            <div data-search-result=""
-                                class="search_widget-result-inner">
-                            </div>
-                        </div>
-                    </form>
-                </li>
-
-                <li class="additional">
-                    <p class="address"> Розничный магазин: <a class="link-tel"
-                            href="tel:+74959245530"><i class="fas fa-phone"></i>
-                            +7 (495) <b>
-                                924-55-30</b></a>
-                </li>
-                <li class="additional">
-                    <p class="address">Юр. лица / регионы: <a class="link-tel"
-                            href="tel:+74959245530"><i class="fas fa-phone"></i>
-                            +7 (495) <b>
-                                772-50-86</b></a>
-                </li>
-                </ul>
-            </nav>
+                            </li>
+                        </ul>
+                        <!-- /end in mobile -->
+                    </div>
+                </nav> 
+                <nav class="site-header__bottom">
+                    <ul class="header-menu row">
+                        <li class="header-menu__item header-menu__item_active"><a href="catalog.html">Комплексные решения</a></li>
+                        <li class="header-menu__item"><a href="portfolio.html">Портфолио</a></li>
+                        <li class="header-menu__item"><a href="about.html">О компании</a></li>
+                        <li class="header-menu__item"><a href="oplata-dostavka.html">Доставка и оплата</a></li>
+                        <li class="header-menu__item"><a href="news.html">Новости</a></li>
+                        <li class="header-menu__item"><a href="contact.html">Контакты</a></li> 
+                        
+                        <li class="header-menu__item header-menu__item_fixed basket">
+                            <a href="tel:+74951500454">+7 495 150-04-54</a> 
+                            <a href="basket.html" class="basket__widget icon-cart">
+                                <div class="icon">
+                                    <div class="center_icon">
+                                        <span class="counter">0</span>
+                                    </div>
+                                </div>
+                            </a> 
+                        </li> 
+                    </ul>
+                </nav>
+            </div> 
         </header>
+        <div class="content">
+            <div class="main-wrapper">
+                <div class="container subheader">
+                    <div class="row">
+                        <div class="subheader__phone"> 
+                            <div class="phone-call">
+                                <i class="phone-call__icon"></i>
+                                <div class="phone-call__number">
+                                    <a href="tel:+74951500454" class="phone-call__link">8 495 150-04-54</a> 
+                                </div>
+                                <a href="tel:+74951500454" class="btn btn-green phone-call__zakazat">Заказать звонок</a>
+                            </div>  
+                        </div>
+                        <form action="/search" method="get" class="subheader__search_widget">
+                            <div class="inpt-group">
+                                <input type="text" autocomplete="off"
+                                class="search_widget-control"  
+                                value="" placeholder="Что вы ищете?">
+                                <button type="submit" class="search_widget-submit">
+                                </button>  
+                                <div class="search_widget-result">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="subheader__basket basket">
+                            <a href="basket.html" class="basket__widget basket__widget_green icon-cart">
+                                <div class="icon">
+                                    <div class="center_icon">
+                                        <span class="counter">0</span>
+                                    </div>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <section class="container promo index"> 
+                    <div class="row"> 
+                        <div class="catalog-menu">
+                            <nav class="catalog-menu__wrap">
+                                <div class="catalog-menu__header">
+                                    Каталог
+                                </div>
+                    <ul class="catalog-menu__list">
+                        <li class="catalog-menu__item"><i class="catalog-menu__icon"></i><a href="catalog.html" class="catalog-menu__link">Hifi Оборудование </a></li>
+                        <li class="catalog-menu__item"><i class="catalog-menu__icon"></i><a href="catalog.html" class="catalog-menu__link">Аудио решения для дома</a></li>
+                        <li class="catalog-menu__item"><i class="catalog-menu__icon"></i><a href="catalog.html" class="catalog-menu__link">Звуковое оборудование</a></li>
+                        <li class="catalog-menu__item"><i class="catalog-menu__icon"></i><a href="catalog.html" class="catalog-menu__link">Звукоизоляция помещений </a></li>
+                        <li class="catalog-menu__item catalog-menu__item_hover"><i class="catalog-menu__icon"></i><a href="catalog.html" class="catalog-menu__link">Кинотеатральное оборудование</a>
+                        <ul class="catalog-menu__sublist">
+                            <span class="catalog-menu__subheader">a href="complex-card.html"</span>
+                            <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">Под Категория</a>
+                                <ul class="catalog-menu__sublist catalog-menu__sublist_2nd"> 
+                                    <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">Под под Категория</a></li>
+                                    <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">Под под Категория</a></li>
+                                    <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">Под под Категория</a></li>
+                                    <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">Под под Категория</a></li>
+                                    <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">Под под Категория</a></li>
+                                    <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">Под под Категория</a></li>
+                                    <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">Под под Категория</a></li>
+                                    <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">Под под Категория</a></li>
+                                    <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">Под под Категория</a></li>
+                                </ul>
+                            </li>
+                            <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">под Категория</a></li>
+                            <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">под Категория</a></li>
+                            <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">под Категория</a></li>
+                            <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">под Категория</a></li>
+                            <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">под Категория</a></li>
+                            <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">под Категория</a></li>
+                            <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">под Категория</a></li>
+                            <li class="catalog-menu__subitem"><a href="catalog.html" class="catalog-menu__sublink">под Категория</a></li>
+                        </ul>
+                        </li>
+                        <li class="catalog-menu__item"><i class="catalog-menu__icon"></i><a href="catalog.html" class="catalog-menu__link">Конференционные системы</a></li>
+                        <li class="catalog-menu__item"><i class="catalog-menu__icon"></i><a href="catalog.html" class="catalog-menu__link"> Оборудование для спецэффектов</a></li>
+                        <li class="catalog-menu__item"><i class="catalog-menu__icon"></i><a href="catalog.html" class="catalog-menu__link">Радиосистемы</a></li>
+                    </ul>
+                                <div class="catalog-menu__see-all">
+                                    <a href="catalog.html">Просмотреть весь каталог</a><i class="catalog-menu__icon right-arrow"></i>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="promo__wrap ">
+                            <div class="promo-slider__wrap" id="promoSlider"> 
+                                <div class="swiper-wrapper"> 
+                                    <div class="swiper-slide" data-swiper-parallax="-23%"> 
+                                        <div class="promo-slider__img_wrapper"> 
+                                            <img class="promo-slider__img" src="assets/banner1.png" alt=""> 
+                                            <div class="promo-slider__text_wrapper" data-swiper-parallax-scale="0.35">
+                                                <h1 class="promo-slider__text" data-swiper-parallax="-1700">
+                                                    Беспроводная система 5 в 1 
+                                                </h1>
+                                                <a class="promo-slider__btn btn btn-white" data-swiper-parallax="-1550">
+                                                    Перейти в каталог
+                                                </a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-swiper-parallax="-23%">
+                                        <div class="promo-slider__img_wrapper"> 
+                                            <img class="promo-slider__img" src="assets/banner2.png" alt=""> 
+                                            <div class="promo-slider__text_wrapper" data-swiper-parallax-scale="0.35">
+                                                <h1 class="promo-slider__text" data-swiper-parallax="-1700">
+                                                    Беспроводная система 5 в 1 
+                                                </h1>
+                                                <a class="promo-slider__btn btn btn-white" data-swiper-parallax="-1550">
+                                                    Перейти в каталог
+                                                </a>
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                                <div class="promo-slider__controls"> 
+                                    <div class="swiper-pagination">
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-banner">
+                            <div class="promo-banner__one"> 
+                            </div>
+                            <div class="promo-banner__two"> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container solutions">
+                    <h2 class="section-header">Комплексные решения</h2>
+                    <ul class="solutions__list row is-grid">
+                        <li class="solutions__item">
+                            <i class="solutions__icon icon"></i><a href="catalog-complex.html" class="solutions__link">Клубам</a>
+                            <ul class="solutions__sub">
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                            </ul>
+                        </li>
+                        <li class="solutions__item">
+                            <i class="solutions__icon icon"></i><a href="catalog-complex.html" class="solutions__link">Ресторанам</a>
+                            <ul class="solutions__sub">
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                            </ul>
+                        </li>
+                        <li class="solutions__item">
+                            <i class="solutions__icon icon"></i><a href="catalog-complex.html" class="solutions__link">Торговые центры, магазины</a>
+                            <ul class="solutions__sub">
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                            </ul>
+                        </li>
+                        <li class="solutions__item">
+                            <i class="solutions__icon icon"></i><a href="catalog-complex.html" class="solutions__link">Для дома</a>
+                            <ul class="solutions__sub">
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                            </ul>
+                        </li>
+                        <li class="solutions__item">
+                            <i class="solutions__icon icon"></i><a href="catalog-complex.html" class="solutions__link">Спортивным учреждениям</a>
+                            <ul class="solutions__sub">
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                            </ul>
+                        </li>
+                        <li class="solutions__item">
+                            <i class="solutions__icon icon"></i><a href="catalog-complex.html" class="solutions__link">Гос. учреждениям</a>
+                            <ul class="solutions__sub">
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                            </ul>
+                        </li>
+                        <li class="solutions__item">
+                            <i class="solutions__icon icon"></i><a href="catalog-complex.html" class="solutions__link">Бизнес-центры</a>
+                            <ul class="solutions__sub">
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                            </ul>
+                        </li>
+                        <li class="solutions__item">
+                            <i class="solutions__icon icon"></i><a href="catalog-complex.html" class="solutions__link">Культурные объекты</a>
+                            <ul class="solutions__sub">
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                            </ul>
+                        </li>
+                        <li class="solutions__item">
+                            <i class="solutions__icon icon"></i><a href="catalog-complex.html" class="solutions__link">Учебные заведения</a>
+                            <ul class="solutions__sub">
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="carousel container"> 
+                    <h3 class="section-header">Хит продаж</h3>
+                    <div class="carousel__wrapper" id="carousel-0"> 
+                            <ul class="product-card__list swiper-wrapper">
+                                <li class="product-card product-card_regular swiper-slide">
+                                    <form class="product-wrapper product-card__form" action="basket.html" method="post"> 
+                                        <div class="product-card__image product-img__wrap">
+                                            <div class="sticker__wrap">
+                                                <div class="stiker stiker-new">
+                                                </div>
+                                            </div> 
+                                            <a href="tovar.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="assets/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar.html">Аудиопроцессоры для конференций Shure IntelliMix P300-IMX доступны для заказа</a>
+                                                <span class="prod-info__price">
+                                                    <small>Цена:</small>
+                                                    <b>763.00 тг</b>
+                                                </span>
+                                                <button class="btn btn-green2">Купить</button>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </li>
+                                <li class="product-card product-card_regular swiper-slide">
+                                    <form class="product-wrapper product-card__form" action="basket.html" method="post"> 
+                                        <div class="product-card__image product-img__wrap">
+                                            <div class="sticker__wrap">
+                                                <div class="stiker stiker-new">
+                                                </div>
+                                            </div> 
+                                            <a href="tovar.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="assets/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar.html">Аудиопроцессоры для конференций Shure IntelliMix P300-IMX доступны для заказа</a>
+                                                <span class="prod-info__price">
+                                                    <small>Цена:</small>
+                                                    <b>763.00 тг</b>
+                                                </span>
+                                                <button class="btn btn-green2">Купить</button>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </li>
+                                <li class="product-card product-card_regular swiper-slide">
+                                    <form class="product-wrapper product-card__form" action="basket.html" method="post"> 
+                                        <div class="product-card__image product-img__wrap">
+                                            <div class="sticker__wrap"> 
+                                            </div> 
+                                            <a href="tovar.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="assets/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar.html">Аудиопроцессоры для конференций Shure IntelliMix P300-IMX доступны для заказа</a>
+                                                <span class="prod-info__price">
+                                                    <small>Цена:</small>
+                                                    <b>763.00 тг</b>
+                                                </span>
+                                                <button class="btn btn-green2">Купить</button>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </li>
+                                <li class="product-card product-card_regular swiper-slide">
+                                    <form class="product-wrapper product-card__form product-card__form_hover" action="basket.html" method="post"> 
+                                        <div class="product-card__image product-img__wrap">
+                                            <div class="sticker__wrap">
+                                                <div class="stiker stiker-new">
+                                                </div>
+                                            </div> 
+                                            <a href="tovar.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="assets/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar.html">Аудиопроцессоры для конференций Shure IntelliMix P300-IMX доступны для заказа</a>
+                                                <span class="prod-info__price">
+                                                    <small>Цена:</small>
+                                                    <b>763.00 тг</b>
+                                                </span>
+                                                <button class="btn btn-green2 btn-green2_hover">Купить</button>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </li>
+                                <li class="product-card product-card_regular swiper-slide">
+                                    <form class="product-wrapper product-card__form" action="basket.html" method="post"> 
+                                        <div class="product-card__image product-img__wrap">
+                                            <div class="sticker__wrap"> 
+                                            </div> 
+                                            <a href="tovar.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="assets/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar.html">Аудиопроцессоры для конференций Shure IntelliMix P300-IMX доступны для заказа</a>
+                                                <span class="prod-info__price">
+                                                    <small>Цена:</small>
+                                                    <b>763.00 тг</b>
+                                                </span>
+                                                <button class="btn btn-green2">Купить</button>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </li> 
+                            </ul>
+                            <div class="swiper-arrows__wrapper">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="swiper-pagination__wrapper">
+                                <div class="swiper-pagination"></div>
+                            </div> 
+                    </div>
+                </section>
+                <section class="carousel container"> 
+                    <h3 class="section-header">Горячие новинки</h3>
+                    <div class="carousel__wrapper" id="carousel-1"> 
+                            <ul class="product-card__list swiper-wrapper">
+                                <li class="product-card product-card_regular swiper-slide">
+                                    <form class="product-wrapper product-card__form" action="basket.html" method="post"> 
+                                        <div class="product-card__image product-img__wrap">
+                                            <div class="sticker__wrap">
+                                                <div class="stiker stiker-new">
+                                                </div>
+                                            </div> 
+                                            <a href="tovar.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="assets/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar.html">Аудиопроцессоры для конференций Shure IntelliMix P300-IMX доступны для заказа</a>
+                                                <span class="prod-info__price">
+                                                    <small>Цена:</small>
+                                                    <b>763.00 тг</b>
+                                                </span>
+                                                <button class="btn btn-green2">Купить</button>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </li>
+                                <li class="product-card product-card_regular swiper-slide">
+                                    <form class="product-wrapper product-card__form" action="basket.html" method="post"> 
+                                        <div class="product-card__image product-img__wrap">
+                                            <div class="sticker__wrap">
+                                                <div class="stiker stiker-new">
+                                                </div>
+                                            </div> 
+                                            <a href="tovar.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="assets/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar.html">Аудиопроцессоры для конференций Shure IntelliMix P300-IMX доступны для заказа</a>
+                                                <span class="prod-info__price">
+                                                    <small>Цена:</small>
+                                                    <b>763.00 тг</b>
+                                                </span>
+                                                <button class="btn btn-green2">Купить</button>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </li>
+                                <li class="product-card product-card_regular swiper-slide">
+                                    <form class="product-wrapper product-card__form" action="basket.html" method="post"> 
+                                        <div class="product-card__image product-img__wrap">
+                                            <div class="sticker__wrap"> 
+                                            </div> 
+                                            <a href="tovar.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="assets/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar.html">Аудиопроцессоры для конференций Shure IntelliMix P300-IMX доступны для заказа</a>
+                                                <span class="prod-info__price">
+                                                    <small>Цена:</small>
+                                                    <b>763.00 тг</b>
+                                                </span>
+                                                <button class="btn btn-green2">Купить</button>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </li>
+                                <li class="product-card product-card_regular swiper-slide">
+                                    <form class="product-wrapper product-card__form product-card__form_hover" action="basket.html" method="post"> 
+                                        <div class="product-card__image product-img__wrap">
+                                            <div class="sticker__wrap">
+                                                <div class="stiker stiker-new">
+                                                </div>
+                                            </div> 
+                                            <a href="tovar.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="assets/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar.html">Аудиопроцессоры для конференций Shure IntelliMix P300-IMX доступны для заказа</a>
+                                                <span class="prod-info__price">
+                                                    <small>Цена:</small>
+                                                    <b>763.00 тг</b>
+                                                </span>
+                                                <button class="btn btn-green2 btn-green2_hover">Купить</button>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </li>
+                                <li class="product-card product-card_regular swiper-slide">
+                                    <form class="product-wrapper product-card__form" action="basket.html" method="post"> 
+                                        <div class="product-card__image product-img__wrap">
+                                            <div class="sticker__wrap"> 
+                                            </div> 
+                                            <a href="tovar.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="assets/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar.html">Аудиопроцессоры для конференций Shure IntelliMix P300-IMX доступны для заказа</a>
+                                                <span class="prod-info__price">
+                                                    <small>Цена:</small>
+                                                    <b>763.00 тг</b>
+                                                </span>
+                                                <button class="btn btn-green2">Купить</button>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </li> 
+                            </ul>
+                            <div class="swiper-arrows__wrapper">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="swiper-pagination__wrapper">
+                                <div class="swiper-pagination"></div>
+                            </div> 
+                    </div>
+                </section> 
+                <section class="news-section container"> 
+                    <h3 class="section-header">Новости</h3> 
+                    <ul class="news-section__list row is-grid">
+                        <li class="news-item">   
+                            <div class="news-item__inner">
+                                <a href="news-page.html"
+                                    class="news-image__link">
+                                    <div class="news-image"
+                                        style="background-image: url('images/news/561.jpg');">
+                                    </div>
+                                </a>
+                                <div class="news-item__info">
+                                    <i class="news-item__date">
+                                        26.04.2019
+                                    </i>
+                                    <a href="news-page.html" class="news-item__link">
+                                        Скидки на проекционное и интерактивное оборудование название будет в три строки
+                                    </a>
+                                </div>
+                            </div> 
+                        </li> 
+                        <li class="news-item">   
+                            <div class="news-item__inner">
+                                <a href="news-page.html"
+                                    class="news-image__link">
+                                    <div class="news-image"
+                                        style="background-image: url('images/news/561-1.jpg');">
+                                    </div>
+                                </a>
+                                <div class="news-item__info">
+                                    <i class="news-item__date">
+                                        26.04.2019
+                                    </i>
+                                    <a href="news-page.html" class="news-item__link">
+                                        Скидки на проекционное и интерактивное оборудование название будет в три строки
+                                    </a>
+                                </div>
+                            </div> 
+                        </li> 
+                        <li class="news-item">   
+                            <div class="news-item__inner">
+                                <a href="news-page.html"
+                                    class="news-image__link">
+                                    <div class="news-image"
+                                        style="background-image: url('images/news/561-2.jpg');">
+                                    </div>
+                                </a>
+                                <div class="news-item__info">
+                                    <i class="news-item__date">
+                                        26.04.2019
+                                    </i>
+                                    <a href="news-page.html" class="news-item__link">
+                                        Скидки на проекционное и интерактивное оборудование название будет в три строки
+                                    </a>
+                                </div>
+                            </div> 
+                        </li> 
+                    </ul>  
+                    <div class="row"> 
+                        <a class="news-section__btn btn btn-green2_big">
+                            Перейти в каталог
+                        </a>
+                    </div>
+                </section> 
+                <section class="carousel brands container"> 
+                    <h3 class="section-header">Нам доверяют</h3>
+                    <div class="carousel__wrapper" id="carousel-2">    
+                        <ul class="brands__list swiper-wrapper row">
+                            <li class="brands__item swiper-slide">  
+                                <a href="#" class="brands__logo img__relative">
+                                    <img class="product-img"
+                                        src="brand1.jpg"
+                                        alt="Нам доверяют">
+                                </a> 
+                            </li>
+                            
+                            <li class="brands__item swiper-slide">  
+                                <a href="#" class="brands__logo img__relative">
+                                    <img class="product-img"
+                                        src="brand1.jpg"
+                                        alt="Нам доверяют">
+                                </a> 
+                            </li>
+                            
+                            <li class="brands__item swiper-slide">  
+                                <a href="#" class="brands__logo img__relative">
+                                    <img class="product-img"
+                                        src="brand1.jpg"
+                                        alt="Нам доверяют">
+                                </a> 
+                            </li>
+                            
+                            <li class="brands__item swiper-slide">  
+                                <a href="#" class="brands__logo img__relative">
+                                    <img class="product-img"
+                                        src="brand1.jpg"
+                                        alt="Нам доверяют">
+                                </a> 
+                            </li>
+                            
+                            <li class="brands__item swiper-slide">  
+                                <a href="#" class="brands__logo img__relative">
+                                    <img class="product-img"
+                                        src="brand1.jpg"
+                                        alt="Нам доверяют">
+                                </a> 
+                            </li>
+                            
+                            <li class="brands__item swiper-slide">  
+                                <a href="#" class="brands__logo img__relative">
+                                    <img class="product-img"
+                                        src="brand1.jpg"
+                                        alt="Нам доверяют">
+                                </a> 
+                            </li>
+                        </ul> 
+                    </div>
+                </section>
+            </div>
+            <footer class="igroupFooter container"> 
+                    <div class="igroupFooter__col">
+                        <img class="igroupFooter__logo" src="images/logo-site_negative.svg" alt="Логотип">
+                    </div>
+                    <div class="igroupFooter__fcol">
+                        <div class="fcol__title">Каталог</div>
+                        <ul class="fcol__list">
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Hifi Оборудование</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Аудио решения для дома</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Звуковое оборудование</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Звукоизоляция помещений</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Кинотеатральное оборудование</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Конференционные системы</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Оборудование для спецэффектов</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Радиосистемы</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link_to-all">Просмотреть каталог</a></li>
+                        </ul>
+                    </div>
+                    <div class="igroupFooter__fcol">
+                        <div class="fcol__title">Покупателю</div>
+                        <ul class="fcol__list">
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Доставка и оплата</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Комплексные  решения</a></li> 
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link_to-all">Политика конфиденциаьности</a></li>
+                        </ul>
+                    </div>
+                    <div class="igroupFooter__fcol">
+                        <div class="fcol__title">Компания</div>
+                        <ul class="fcol__list">
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">О компании</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Новости</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Портфолио</a></li>
+                            <li class="fcol__item"><a href="catalog.html" class="fcol__link">Контакты</a></li> 
+                        </ul>
+                    </div>
+                    <div class="igroupFooter__fcol">
+                        <ul class="fcol__contacts">
+                            <li><a href="tel:+74951500454">8 495 150-04-54</a>
+                            </li>
+                            <li><a class="info-email" href="mailto:info@install-group">info@install-group</a>
+                            </li> 
+                            <li class="info-adress">
+                                <span class="info-adress__title">Город</span>
+                                <span class="info-adress__worktime">пр-т Лобановского, 196 
+                                    (пн-пт. 9:00-18:00; сб. 9:00-16:00)</span>
+                            </li> 
+                            <li class="info-adress">
+                                <span class="info-adress__title">Город</span>
+                                <span class="info-adress__worktime">пр-т Лобановского, 196 
+                                    (пн-пт. 9:00-18:00; сб. 9:00-16:00)</span>
+                            </li> 
+                        </ul>
+                        <ul class="social-list is-icon-font"> 
+                            <li class="social-list__item list-item">
+                              <a target="blank" title="Vkontakte" href="http://vk.com/" class="social-list__link is-vk"> 
+                                  <i class="fab fa-vk" aria-hidden="true"></i> 
+                              </a>
+                            </li> 
+                            <li class="social-list__item list-item">
+                              <a target="blank" title="Facebook" href="http://facebook.com/" class="social-list__link is-facebook"> 
+                                  <i class="fab fa-facebook" aria-hidden="true"></i> 
+                              </a>
+                            </li> 
+                            <li class="social-list__item list-item">
+                              <a target="blank" title="Instagram" href="http://instagram.com/" class="social-list__link is-instagram"> 
+                                  <i class="fab fa-instagram" aria-hidden="true"></i> 
+                              </a>
+                            </li> 
+                            <li class="social-list__item list-item">
+                              <a target="blank" title="YouTube" href="http://youtube.com/" class="social-list__link is-youtube"> 
+                                  <i class="fab fa-youtube" aria-hidden="true"></i> 
+                              </a>
+                            </li> 
+                            <li class="social-list__item list-item">
+                              <a target="blank" title="Twitter" href="http://twitter.com/" class="social-list__link is-twitter"> 
+                                  <i class="fab fa-twitter" aria-hidden="true"></i> 
+                              </a>
+                            </li> 
+                      </ul>
+                    </div>
+                    <div type="button" class="js-scroll_top scroll_top">
+                    </div> 
+            </footer>
+        </div>
     </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/mmenu-light.js"></script>
+    <script src="js/fancybox.js"></script>
 
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/mmenu-light.js"></script>
-    <script src="assets/js/fancybox.js"></script>
-    <script src="assets/js/mouse-move-animate.js"></script>
-
-    <script src="assets/js/jq-inview.js"></script>
-    <script src="assets/js/typed.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/common.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
