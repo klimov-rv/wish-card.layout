@@ -1,0 +1,257 @@
+.gallery-main {
+    position: relative;
+}
+
+.gallery-main .sticker__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.product__code {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8D2B0B;
+}
+
+.gallery-img {
+    padding: 10px;
+    width: 100%;
+}
+
+.swiper-container.gallery-thumbs {
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 6px;
+}
+
+.gallery-thumbs .gallery__item {
+    box-sizing: border-box;
+    border: 1px solid #A7CF9F;
+    border-radius: 5px;
+}
+
+.gallery-thumbs-holder {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.gallery-continuation {
+    width: calc(20% - 15px);
+    height: 70px;
+    border: 1px solid #A7CF9F;
+    border-radius: 6px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 calc(20% - 15px);
+}
+
+.gallery-continuation span {
+    color: #419A28;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 42px;
+}
+
+.price-block {
+    padding: 15px;
+    background: #EFF1F5;
+    border-radius: 10px;
+}
+
+.price-block s {
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.price-block b {
+    font-size: 28px;
+    color: #419A28;
+}
+
+.product__description>.row {
+    padding: 10px 0;
+}
+
+.product__description>.row.with-buttons {
+    padding-bottom: 0;
+}
+
+.product__description .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.call-block {
+    height: 57px;
+    background: #EFF1F5;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.call-block a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #419A28;
+}
+.call-block:hover a {
+    text-decoration: underline;
+}
+
+.gallery-main .gallery__item {
+    height: 445px;
+}
+
+.product__card_tabs .tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 72px;
+    border: 1px solid #A7CF9F;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.product__card_tabs {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.product__card_tabs .tablinks {
+    height: 73%;
+    background: none;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #212425;
+    padding: 0 40px;
+}
+
+.product__card_tabs .tablinks:not(:last-child) {
+    border-right: 1px solid #A7CF9F;
+}
+
+.product__card_tabs .tablinks:hover, .product__card_tabs .tablinks.active {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #419A28;
+}
+
+.product__description .t-cell-like {
+    padding: 3px 10px;
+    margin: 3px 20px 3px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 31px;
+}
+
+.tabs-content {
+    flex: 0 0 100%;
+    margin: 20px 0;
+}
+
+.t-row-like {
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.t-row-like:nth-child(odd) {
+    background: #EFF1F5;
+}
+
+.t-row-like .t-cell-like:first-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 30%;
+    flex: 1 0 30%;
+    font-weight: 500;
+    font-size: 13.6861px;
+}
+
+.t-row-like .t-cell-like:last-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 70%;
+    flex: 1 0 70%;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 13.6861px;
+    line-height: 16px;
+    letter-spacing: 0.114051px;
+    color: #419A28;
+}
+
+.pdf-block {
+    border: 1px solid #D9E2EC;
+    border-radius: 6px;
+    padding: 15px 25px 15px 60px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 100%;
+}
+
+.icon-pdf {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 45px;
+    height: 45px;
+    background: url("../images/icon_pdf.svg") no-repeat center center transparent;
+}
+
+.pdf-info a {
+    display: block;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #102A43;
+}
+
+.pdf-block small {
+    font-size: 14px;
+    line-height: 18px;
+    color: #627D98;
+}
+
+.pdf-block__holder {
+    flex-wrap: wrap;
+}
+
+.product__card_wrap .product__info {
+    margin-top: -15px;
+}

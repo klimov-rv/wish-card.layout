@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site</title>
+    <link rel="preload" href="_fonts.css" as="style">
+    <link rel="stylesheet" type="text/css" href="_fonts.css">
+    <link rel="stylesheet" type="text/css" href="scss/normalise.css"> 
+    <link rel="stylesheet" type="text/css" href="scss/spider.css">
+
+    <link rel="stylesheet" type="text/css" href="scss/swiper.css">
+    <link rel="stylesheet" type="text/css" href="scss/aos.css">
+    <link rel="stylesheet" type="text/css" href="scss/fancybox.css">
+    <link rel="stylesheet" type="text/css" href="scss/hamburger.css">
+    <link rel="stylesheet" type="text/css" href="scss/mmenu-light.css">
+    <link rel="stylesheet" type="text/css" href="scss/theme.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" type="text/css" href="scss/catalog.css">
+    <link rel="stylesheet" type="text/css" href="scss/responsive.css"> 
+
+    <!-- для продакшена - gulp + gulp build -->
+    <link rel="stylesheet" href="_fonts.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    
+</head>
+
+<body class="template-production">
+    <div id="page">
+        <header class="site-header">
+            <div class="site-header__top container">   
+                <!-- Десктоп шапка -->
+                <nav class="row"> 
+                    <a class="burger-mobile hide show-sm" href="#mmenu1">
+                        <span></span>
+                    </a>
+                    <a href="index.html" class="site-header__logo cell-2"
+                        title="Логотип">
+                        <img src="images/logo-site.svg" alt="Логотип"> 
+                    </a>
+                    <!-- in mobile -->
+                    <ul class="mtop-links hide show-sm">
+                        <li class="mtop-links__item">
+                            <a class="mtop-links__link icon-search" href="#">
+                                <div class="icon">
+                                </div>
+                            </a>
+                            <form action="/search" method="get"
+                                class="search_widget">
+                                <div class="inpt-group">
+                                    <input type="text" autocomplete="off"
+                                        class="search_widget-control"
+                                        value=""
+                                        placeholder="Что вы ищете?">
+                                    <button type="submit"
+                                        class="btn search_widget-submit">
+                                    </button>
+                                    <div class="search_widget-result">
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="mtop-links__item">
+                            <a class="mtop-links__link icon-cart" href="basket.html">
+                                <div class="icon">
+                                    <div class="center_icon">
+                                        <span class="counter">6</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /end in mobile --> 
+                </nav> 
+            </div> 
+            
+            <div class="site-header__bottom">
+                <nav class="container"> 
+                    <a class="catalog-menu-mobile hide show-sm" href="#mmenu2">
+                        <span>Каталог</span>
+                    </a>
+                    <ul class="header-menu row"> 
+                        <a href="index.html" class="site-header__logo_negative cell-1" title="Логотип"> 
+                            <img src="images/logo-site_negative.svg" alt="Логотип">
+                        </a>
+                        <li class="header-menu__item"><a
+                                href="demo.html">Демо</a></li>
+                        <li class="header-menu__item"><a href="catalog-complex.html">Комплексные решения</a></li>
+                        <li class="header-menu__item"><a href="catalog-portfolio.html">Портфолио</a></li>
+                        <li class="header-menu__item"><a href="about.html">О компании</a></li>
+                        <li class="header-menu__item"><a href="oplata-dostavka.html">Доставка и оплата</a></li>
+                        <li class="header-menu__item"><a href="news.html">Новости</a></li>
+                        <li class="header-menu__item"><a href="contact.html">Контакты</a></li>  
+                        <li class="header-menu__item basket">
+                            <a href="tel:+74951500454">+7 495 150-04-54</a> 
+                            <a href="basket.html" class="basket__widget icon-cart">
+                                <div class="icon">
+                                    <div class="center_icon">
+                                        <span class="counter">6</span>
+                                    </div>
+                                </div>
+                            </a> 
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content">
+            <div class="main-wrapper">
+                <div class="container subheader">
+                    <div class="row">
+                        <div class="subheader__phone cell-3"> 
+                            <div class="phone-call">
+                                <i class="phone-call__icon"></i>
+                                <div class="phone-call__number"> 
+                                    <a href="tel:+74951500454" class="phone-call__link">8 495 150-04-54</a> 
+                                </div>
+                                <a data-fancybox data-src="#hidden-content-a" href="tel:+74951500454" class="btn btn-green phone-call__zakazat">Заказать звонок</a>
+                            </div>  
+                        </div>
+                        <form action="/search" method="get" class="subheader__search_widget cell-7">
+                            <div class="inpt-group">
+                                <input type="text" autocomplete="off"
+                                class="search_widget-control"  
+                                value="" placeholder="Что вы ищете?">
+                                <button type="submit" class="btn search_widget-submit">
+                                </button>  
+                                <div class="search_widget-result">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="subheader__basket basket cell-2">
+                            <a href="basket.html" class="basket__widget_green">
+                                <div class="basket__widget icon-cart"> 
+                                    <div class="icon">
+                                        <div class="center_icon">
+                                            <span class="counter">6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-text"> 
+                                    <span class="text-line"> 
+                                        6 товаров
+                                    </span>
+                                    <span class="text-line">
+                                        799 183 тг
+                                    </span>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="breadcrumb__wrapper row row-padd">
+                        <ul class="breadcrumb cell-12">
+                            <li class="breadcrumb-item">
+                                <a class="breadcrumb-link" title="Главная" href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <span class="breadcrumb-link current-page">Каталог</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+                <section class="container catalog-feed">
+                    <h2 class="section-header"><span class="with-tail">Категории товара</span></h2> 
+                    <div class="row">
+                        <div class="catalog-feed__menu cell-3"> 
+                            <ul class="category-menu__list">
+                                <li class="category-menu__item"><i class="category-menu__icon icons-font__catalog_0"></i><a href="catalog.html" class="category-menu__link">Hifi Оборудование </a></li>
+                                <li class="category-menu__item"><i class="category-menu__icon icons-font__catalog_1"></i><a href="catalog.html" class="category-menu__link">Аудио решения для дома</a></li>
+                                <li class="category-menu__item"><i class="category-menu__icon icons-font__catalog_3"></i><a href="catalog.html" class="category-menu__link">Звуковое оборудование</a></li>
+                                <li class="category-menu__item"><i class="category-menu__icon icons-font__catalog_4"></i><a href="catalog.html" class="category-menu__link">Звукоизоляция помещений </a></li>
+                                <li class="category-menu__item subcategory is-sub-active">
+                                    <i class="category-menu__icon icons-font__catalog_5"></i>
+                                    <a href="catalog.html" class="category-menu__link">Кинотеатральное оборудование</a>
+                                    <i class="category-menu__icon_arrow"></i>
+                                </li>
+                                <div class="category-menu__sublist_wrap"> 
+                                    <ul class="catalog-menu__sublist"> 
+                                        <li class="category-menu__subitem subcategory">
+                                            <i class="category-menu__icon_arrow"></i>
+                                            <a href="catalog.html" class="category-menu__sublink">Под Категория</a>
+                                        </li>
+                                        <div class="category-menu__sublist_wrap"> 
+                                            <ul class="category-menu__sublist category-menu__sublist_2nd"> 
+                                                <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">Под под Категория</a></li>
+                                                <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">Под под Категория</a></li>
+                                                <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">Под под Категория</a></li>
+                                                <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">Под под Категория</a></li>
+                                                <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">Под под Категория</a></li>
+                                                <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">Под под Категория</a></li>
+                                                <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">Под под Категория</a></li>
+                                                <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">Под под Категория</a></li>
+                                                <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">Под под Категория</a></li>
+                                            </ul>
+                                        </div>
+                                        <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">под Категория</a></li>
+                                        <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">под Категория</a></li>
+                                        <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">под Категория</a></li>
+                                        <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">под Категория</a></li>
+                                        <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">под Категория</a></li>
+                                        <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">под Категория</a></li>
+                                        <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">под Категория</a></li>
+                                        <li class="category-menu__subitem"><a href="catalog.html" class="category-menu__sublink">под Категория</a></li>
+                                    </ul>
+                                </div>
+                                <li class="category-menu__item"><i class="category-menu__icon icons-font__catalog_6"></i><a href="catalog.html" class="category-menu__link">Звукоизоляция помещений </a></li>
+                                <li class="category-menu__item"><i class="category-menu__icon icons-font__catalog_7"></i><a href="catalog.html" class="category-menu__link">Звукоизоляция помещений </a></li>
+                                <li class="category-menu__item"><i class="category-menu__icon icons-font__catalog_8"></i><a href="catalog.html" class="category-menu__link">Звукоизоляция помещений </a></li>
+                            </ul> 
+                            <form class="collection-filter" action="/" method="get"> 
+                                <div class="filter-activated">
+                                    <div class="filter-title js-filter-opener">
+                                    <span> Вы выбрали </span> 
+                                    <a href="#" class="filters-clear"> Сбросить фильтры </a>
+                                    </div> 
+                                    <a href="#" class="filter-is-activated">Цена от 100 до 99 9999 тг <i class="close"></i> </a> 
+                                    <a href="#" class="filter-is-activated">Беспроводное <i class="close"></i></a>
+                                </div>
+                                <div class="filter">
+                                <div class="filter-title js-filter-opener">
+                                    <span>
+                                        Цена, грн
+                                    </span>  
+                                    <i class="filter-toggle-cross"></i> 
+                                </div>
+                                <div class="filter-items-wrapper is-tab-active">
+                                    <div class="filter-body range-slider js-filter-range-slider-price"> 
+                                        <div class="range-slider-input row is-grid flex-center">
+                                            <div class="cell-5">
+                                            <input class="input-field" name="price_min" placeholder="100" value="100">
+                                            </div>
+                                            <div class="cell-2 range-slider-middle-inputs">—</div>
+                                            <div class="cell-5">
+                                            <input class="input-field" name="price_max" placeholder="6500" value="6500">
+                                            </div>
+                                            <input type="text" class="js-range-slider" name="my_range" value=""
+                                            data-type="double"
+                                            data-min="100"
+                                            data-max="6500"
+                                            data-from="500"
+                                            data-to="5000"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                </div> 
+                                <div class="filter">
+                                <div class="filter-title js-filter-opener">
+                                    <span class="is-button-close"> 
+                                        Подключение колонок
+                                    </span> 
+                                    <i class="filter-toggle-cross"></i> 
+                                </div>
+                                <div class="filter-items-wrapper">
+                                    <ul class="filter-items-list">
+                                        <li class="filter-item">
+                                            <label class="chkbx-label">
+                                                <input class="chkbx" type="checkbox">
+                                                <span class="chkbx-control"></span>
+                                                <span>Проводное</span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-item">
+                                            <label class="chkbx-label">
+                                                <input class="chkbx" type="checkbox">
+                                                <span class="chkbx-control"></span>
+                                                <span>Беспроводное</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                                <div class="filter">
+                                <div class="filter-title js-filter-opener">
+                                    <span class="is-button-close"> 
+                                        Контроль
+                                    </span> 
+                                    <i class="filter-toggle-cross" aria-hidden="true"></i> 
+                                </div>
+                                <div class="filter-items-wrapper">
+                                    <ul class="filter-items-list">
+                                        <li class="filter-item">
+                                            <label class="chkbx-label">
+                                                <input class="chkbx" type="checkbox">
+                                                <span class="chkbx-control"></span>
+                                                <span>Выбор 1</span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-item">
+                                            <label class="chkbx-label">
+                                                <input class="chkbx" type="checkbox">
+                                                <span class="chkbx-control"></span>
+                                                <span>Выбор 2</span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-item">
+                                            <label class="chkbx-label">
+                                                <input class="chkbx" type="checkbox">
+                                                <span class="chkbx-control"></span>
+                                                <span>Выбор 3</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                                <div class="filter">
+                                <div class="filter-title js-filter-opener">
+                                    <span class="is-button-close">
+                                        Категория фильтра
+                                    </span> 
+                                    <i class="filter-toggle-cross" aria-hidden="true"></i> 
+                                </div>
+                                <div class="filter-items-wrapper is-tab-close">
+                                    <ul class="filter-items-list is-characteristics is-checkbox">
+                                        <li class="filter-item">
+                                            <label class="chkbx-label">
+                                                <input class="chkbx" type="checkbox">
+                                                <span class="chkbx-control"></span>
+                                                <span>Выбор 4</span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-item">
+                                            <label class="chkbx-label">
+                                                <input class="chkbx" type="checkbox">
+                                                <span class="chkbx-control"></span>
+                                                <span>Выбор 5</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div> 
+                                <div class="filter-submit_wrap show-flex flex-center">
+                                <button type="submit" class="filter-submit btn btn-green2_big">Применить (0)</button>
+                                </div>
+                            </form> 
+                        </div>
+                        <div class="catalog-feed__prod cell-9">
+                            <ul class="catalog-feed__prod_list row is-thin-grid">
+                                <li class="product-card cell-3"> 
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_1.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Системы трансляции и оповещения</a> 
+                                            </div>
+                                        </div>  
+                                    </div> 
+                                </li>
+                                <li class="product-card cell-3">  
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Музыкальное оборудование</a> 
+                                            </div>
+                                        </div>  
+                                    </div>  
+                                </li>
+                                <li class="product-card cell-3"> 
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Музыкальное оборудование</a> 
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </li> 
+                                <li class="product-card cell-3"> 
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Системы трансляции и оповещения</a> 
+                                            </div>
+                                        </div>  
+                                    </div> 
+                                </li>
+                                <li class="product-card cell-3">  
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Музыкальное оборудование</a> 
+                                            </div>
+                                        </div>  
+                                    </div>  
+                                </li>
+                                <li class="product-card cell-3"> 
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Музыкальное оборудование</a> 
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </li>
+                                <li class="product-card cell-3"> 
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Системы трансляции и оповещения</a> 
+                                            </div>
+                                        </div>  
+                                    </div> 
+                                </li>
+                                <li class="product-card cell-3">  
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Музыкальное оборудование</a> 
+                                            </div>
+                                        </div>  
+                                    </div>  
+                                </li>
+                                <li class="product-card cell-3"> 
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Музыкальное оборудование</a> 
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </li>
+                                <li class="product-card cell-3"> 
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Системы трансляции и оповещения</a> 
+                                            </div>
+                                        </div>  
+                                    </div> 
+                                </li>
+                                <li class="product-card cell-3">  
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Музыкальное оборудование</a> 
+                                            </div>
+                                        </div>  
+                                    </div>  
+                                </li>
+                                <li class="product-card cell-3"> 
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Музыкальное оборудование</a> 
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </li> 
+                                <li class="product-card cell-3">  
+                                    <div class="product-card_mini">
+                                        <div class="product-card__image product-img__wrap"> 
+                                            <a href="tovar-card.html" class="product-img__relative">
+                                                <img class="product-img"
+                                                    src="images/prod/prod_2.jpg"
+                                                    alt="продукт">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="prod-info__title">
+                                                <a class="prod-title"
+                                                    href="tovar-card.html">Музыкальное оборудование</a> 
+                                            </div>
+                                        </div>  
+                                    </div>  
+                                </li> 
+                            </ul>   
+                            <!--                             
+                            <div class="row">
+                                <ul class="pagination">
+                                    <li class="pagination-item">
+                                        <span class="pagination-link">
+                                            &lt; </span>
+                                    </li>
+                                    <li class="pagination-item is-current">
+                                        <a href="#" class="pagination-link">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-link">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-link">
+                                            3
+                                        </a>
+                                    </li> 
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-link"> &gt; </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                            -->
+                        </div>
+                    </div>  
+                </section>  
+            </div>
+            <footer class="igroupFooter"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="igroupFooter__col cell-2">
+                            <div class="logo-wrapper"> 
+                                <img class="igroupFooter__logo" src="images/logo-site_negative.svg" alt="Логотип">
+                            </div>
+                        </div>
+                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-3">
+                            <div class="fcol__title">Каталог</div>
+                            <ul class="fcol__list">
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Hifi Оборудование</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Аудио решения для дома</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Звуковое оборудование</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Звукоизоляция помещений</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Кинотеатральное оборудование</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Конференционные системы</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Оборудование для спецэффектов</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Радиосистемы</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link_to-all">Просмотреть каталог</a></li>
+                            </ul>
+                        </div>
+                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-2">
+                            <div class="fcol__title">Покупателю</div>
+                            <ul class="fcol__list">
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Доставка и оплата</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Комплексные  решения</a></li> 
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link_to-all">Политика конфиденциаьности</a></li>
+                            </ul>
+                        </div>
+                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-2">
+                            <div class="fcol__title">Компания</div>
+                            <ul class="fcol__list">
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">О компании</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Новости</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Портфолио</a></li>
+                                <li class="fcol__item"><a href="catalog.html" class="fcol__link">Контакты</a></li> 
+                            </ul>
+                        </div>
+                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-3">
+                            <ul class="fcol__contacts">
+                                <li><a class="info-big" href="tel:+74951500454">8 495 150-04-54</a>
+                                </li>
+                                <li><a class="info-big" href="mailto:info@install-group">info@install-group</a>
+                                </li> 
+                                <li class="info-adress">
+                                    <span class="info-adress__title">Город</span>
+                                    <span class="info-adress__worktime">пр-т Лобановского, 196 
+                                        (пн-пт. 9:00-18:00; сб. 9:00-16:00)</span>
+                                </li> 
+                                <li class="info-adress">
+                                    <span class="info-adress__title">Город</span>
+                                    <span class="info-adress__worktime">пр-т Лобановского, 196 
+                                        (пн-пт. 9:00-18:00; сб. 9:00-16:00)</span>
+                                </li> 
+                            </ul>
+                            <ul class="social-list is-icon-font"> 
+                                <li class="social-list__item list-item">
+                                  <a target="blank" title="Vkontakte" href="http://vk.com/" class="social-list__link is-vk"> 
+                                      <i class="fab fa-vk" aria-hidden="true"></i> 
+                                  </a>
+                                </li> 
+                                <li class="social-list__item list-item">
+                                  <a target="blank" title="Facebook" href="http://facebook.com/" class="social-list__link is-facebook"> 
+                                      <i class="fab fa-facebook" aria-hidden="true"></i> 
+                                  </a>
+                                </li> 
+                                <li class="social-list__item list-item">
+                                  <a target="blank" title="Instagram" href="http://instagram.com/" class="social-list__link is-instagram"> 
+                                      <i class="fab fa-instagram" aria-hidden="true"></i> 
+                                  </a>
+                                </li> 
+                                <li class="social-list__item list-item">
+                                  <a target="blank" title="YouTube" href="http://youtube.com/" class="social-list__link is-youtube"> 
+                                      <i class="fab fa-youtube" aria-hidden="true"></i> 
+                                  </a>
+                                </li> 
+                                <li class="social-list__item list-item">
+                                  <a target="blank" title="Twitter" href="http://twitter.com/" class="social-list__link is-twitter"> 
+                                      <i class="fab fa-twitter" aria-hidden="true"></i> 
+                                  </a>
+                                </li> 
+                          </ul>
+                        </div>
+                    </div> 
+                    <div type="button" class="js-scroll_top scroll_top">
+                    </div> 
+                </div> 
+            </footer>
+        </div>
+    </div>
+    
+    <!-- Мобильное сайд-меню 1 -->
+    <nav id="mmenu1" data-mmenu-title="Меню">
+        <ul>
+            <a href="/index.html" class="logotype in-mobile">
+                <img src="assets/logo-icon-only-black.svg" alt="">
+            </a> 
+            <li class="mmenu__item"><a href="catalog.html">
+                    Демо каталог</a>
+            </li>
+            <li class="mmenu__item"><a href="tovar-card.html">
+                    Демо Товар</a>
+            </li> 
+            <li class="mmenu__item"><a href="about.html">
+                    Демо о компании</a>
+            </li>
+            <li class="mmenu__item"><a href="catalog-complex.html">
+                    Демо комплекс каталог</a>
+            </li>
+            <li class="mmenu__item"><a href="complex-card.html">
+                    Демо Комплекс</a>
+            </li>
+            <li class="mmenu__item"><a href="catalog-portfolio.html">
+                    Демо Портфолио</a>
+            </li>
+            <li class="mmenu__item"><a href="oplata-dostavka.html">
+                    Оплата и доставка</a>
+            </li>
+            <li class="mmenu__item"><a href="news.html">
+                    Демо Новости</a>
+            </li>
+            <li class="mmenu__item"><a href="news-card.html">
+                    Демо Новость</a>
+            </li>
+            <li class="mmenu__item"><a href="contact.html">
+                    Демо Контакты</a>
+            </li>
+            <li class="mmenu__item"><a href="basket.html">
+                    Демо Корзина</a>
+            </li>
+            <li class="mmenu__item"><a href="basket-checkout.html">
+                    Демо Оформление заказа</a>
+            </li> 
+
+            <li class="mobile__additional-info">
+                <div class="phone-call">
+                    <div class="phone-call__number">
+                        <a href="tel:+74951500454" class="phone-call__link">8 495 150-04-54</a> 
+                    </div>
+                    <a href="tel:+74951500454" class="btn btn-green phone-call__zakazat">Заказать звонок</a>
+                </div> 
+            </li>
+
+        </ul>
+    </nav>
+    <!-- /end Мобильное сайд-меню 1 -->
+    
+    <!-- Мобильное сайд-меню 2 (каталог) -->
+    <nav id="mmenu2" data-mmenu-title="Каталог">
+        <ul>
+            <div class="mmenu__header">
+                Каталог
+            </div>
+            <li class="mmenu__item">
+                <a href="#">Hifi Оборудование</a>
+            </li>
+
+            <li class="mmenu__item"> 
+                <a href="#" class="mmenu__link">Системы трансляции и оповещения</a>
+                <ul> 
+                    <div class="mmenu__header">
+                        Сигнализации
+                    </div>
+                    <a href="#" class="mmenu__link-to-catalog">Перейти в категорию “Системы трансляции и оповещения”</a> 
+                    <li>
+                        <a href="#">Аксессуары</a> 
+                    </li> 
+                    <li>
+                        <a href="#">Трансляционные акустические системы</a> 
+                    </li> 
+                    <li> 
+                        <a href="#">Трансляционные матрицы</a> 
+                    </li> 
+                    <li> 
+                        <a href="#">Трансляционные проигрыватели</a> 
+                    </li> 
+                    <li>
+                        <a href="#">Трансляционные усилители</a>
+                    </li> 
+                </ul> 
+            </li>   
+            <li class="mmenu__item"><a href="#">
+                Звуковое оборудование</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                Звукоизоляция помещений</a>
+            </li> 
+            <li class="mmenu__item"><a href="#">
+                Кинотеатральное оборудование</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                Конференционные системы</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                Конференционные системы</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                Конференционные системы</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                Конференционные системы</a>
+            </li>   
+        </ul>
+    </nav>
+    <!-- /end Мобильное сайд-меню 2 (каталог) -->
+
+    <!-- всплывающие окна -->
+    
+    <div style="display: none;" id="hidden-content-a">
+        <h2>Hello!</h2>
+        <p>You are awesome!</p>
+    </div>
+    
+    <!-- /end всплывающие окна -->
+
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="libs/swiper/swiper.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
+    <script src="libs/mmenu/mmenu-light.js"></script>
+    <script src="libs/jquery.fancybox/fancybox.js"></script>
+    <script src="libs/rangeSlider/ion.rangeSlider.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

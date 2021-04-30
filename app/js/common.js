@@ -4,44 +4,78 @@ AOS.init({
   once: true
 });
 
-//	Mmenu
-var menu = new MmenuLight(
-  document.querySelector('#menu'),
+//	Mmenu 1
+var menu1 = new MmenuLight(
+  document.querySelector('#mmenu1'),
   'all'
 );
 
-var navigator = menu.navigation({
+var navigator1 = menu1.navigation({
 });
 
-var drawer = menu.offcanvas({
+var drawer1 = menu1.offcanvas({
 });
 
-document.querySelector('a[href="#menu"]')
-  .addEventListener('click', evnt => {
-    evnt.preventDefault();
-    drawer.open();
-  });
+//	Mmenu 2
+var menu2 = new MmenuLight(
+  document.querySelector('#mmenu2'),
+  'all'
+);
 
-//	шапка
-$(window).load(function () { 
-  const headerGap = document.querySelector(".eliteHeader").offsetHeight - 51; 
+var navigator2 = menu2.navigation({
+});
+
+var drawer2 = menu2.offcanvas({
+});
+
+
+$(window).load(function () {
+
+  document.querySelector('a[href="#mmenu1"]')
+    .addEventListener('click', evnt => {
+      evnt.preventDefault();
+      drawer1.open();
+    });
+
+  document.querySelector('a[href="#mmenu2"]')
+    .addEventListener('click', evnt => {
+      evnt.preventDefault();
+      drawer2.open();
+    });
+
+
+    $('[data-fancybox]').fancybox({
+      youtube: {
+        controls: 0,
+        showinfo: 0
+      },
+      vimeo: {
+        color: 'f00'
+      }
+    }); 
+    
+  //	шапка
+  const headerGap = document.querySelector(".site-header").offsetHeight - 51;
   console.log(headerGap);
   const FollowScrollMenu = menuContainer => {
-    let lastScrollPosition = window.pageYOffset; 
+    let lastScrollPosition = window.pageYOffset;
     window.addEventListener('scroll', () => {
       const currentScrollPosition = window.pageYOffset;
       const direction = Math.sign(currentScrollPosition - lastScrollPosition);
       lastScrollPosition = currentScrollPosition;
       const shouldBeCollapsed = direction > 0 && currentScrollPosition > headerGap;
       const shouldBeHidden = currentScrollPosition > headerGap;
-      menuContainer.classList.toggle('collapsed', shouldBeCollapsed);
-      menuContainer.classList.toggle('scrolled', shouldBeHidden);
+      menuContainer.classList.toggle('site-header_collapsed', shouldBeCollapsed);
+      menuContainer.classList.toggle('site-header_scrolled', shouldBeHidden);
     })
   }
   FollowScrollMenu(document.querySelector('header'));
 });
- 
+
 // табы
+if (document.getElementById("defaultOpen")) {
+  document.getElementById("defaultOpen").click();
+}
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
 
@@ -52,14 +86,12 @@ function openTab(evt, tabName) {
 
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-    tabSlider0.update();
-    tabSlider1.update();
+    tablinks[i].className = tablinks[i].className.replace(" active", ""); 
   }
 
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
-} 
+}
 
 // галерея на странице товаров
 function galleryInit(galleryThumbs, galleryMain) {
@@ -68,20 +100,19 @@ function galleryInit(galleryThumbs, galleryMain) {
 
   var galleryThumbsSlider = new Swiper(galleryThumbs, {
     loopedSlides: $(galleryThumbs + " .swiper-wrapper .swiper-slide").length,
-    spaceBetween: 10,
+    spaceBetween: 20,
     navigation: {
       nextEl: ".js-gallery-thumbs .swiper-button-next",
       prevEl: ".js-gallery-thumbs .swiper-button-prev"
     },
-
-    direction: 'vertical',
+ 
     pagination: {
       el: '.js-gallery-thumbs .swiper-pagination',
       clickable: true,
     },
     speed: 200,
     loop: false,
-    slidesPerView: 3,
+    slidesPerView: 4,
     touchRatio: 0.2,
     slideToClickedSlide: true
   });
@@ -120,3 +151,15 @@ function galleryInit(galleryThumbs, galleryMain) {
     }
   });
 }
+// тогглит раскрывающий тег
+function toggleDropDown(clickedEl, togglingClass) { 
+  var dropDownElements = document.getElementsByClassName(clickedEl);
+  var i;
+  for (i = 0; i < dropDownElements.length; i++) {
+      dropDownElements[i].addEventListener('click', function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+          this.classList.toggle(togglingClass);
+      });
+  }
+} 

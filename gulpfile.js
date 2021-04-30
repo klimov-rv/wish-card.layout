@@ -41,24 +41,11 @@ function libs() {
         .pipe(dest('dist/libs'))
 }
 
-function scripts() {
-    return src([
-        'node_modules/jquery/dist/jquery.js',
-        'app/js/common.js'
-    ])
-        .pipe(concat('main.min.js'))
-        .pipe(uglify())
-        .pipe(dest('app/js'))
-        .pipe(browserSync.stream())
-}
-
-
 const cssBundle = () =>
     src([
         'app/_fonts.css',
         'app/scss/normalise.css',
         'app/scss/spider.css',
-        'app/scss/theme.css',
 
         'app/scss/swiper.css',
         'app/scss/aos.css',
@@ -66,6 +53,7 @@ const cssBundle = () =>
         'app/scss/hamburger.css',
         'app/scss/mmenu-light.css',
 
+        'app/scss/theme.css',
         'app/scss/index.css',
         'app/scss/responsive.css'
     ]) 
@@ -75,42 +63,47 @@ const cssBundle = () =>
             grid: true
         }))
         .pipe(dest('app/css'))
-        .pipe(browserSync.stream())
+        .pipe(browserSync.stream()) 
 
-
-
-// function styles() {
-//     // 'css/fonts.css',
-//     // 'css/normalise.css',
-//     // 'css/spider.css',
-//     // 'css/theme.css',
-
-//     // 'css/swiper.css',
-//     // 'css/aos.css',
-//     // 'css/fancybox.css',
-//     // 'css/hamburger.css',
-//     // 'css/mmenu-light.css',
-
-//     // 'css/index.css',
-//     // 'css/responsive.css' 
-//     return src('app/scss/style.scss')
-//         .pipe(scss({ outputStyle: 'compact' }))
-//         .pipe(concat('style.min.css'))
-//         .pipe(autoprefixer({
-//             overrideBrowserslist: ['last 10 version'],
-//             grid: true
-//         }))
-//         .pipe(dest('app/css'))
-//         .pipe(browserSync.stream())
-// }
+function scripts() {
+    return src([ 
+        'app/js/index.js',
+        'app/js/common.js'
+    ])
+    .pipe(concat('main.min.js'))
+    .pipe(uglify())
+    .pipe(dest('app/js'))
+    .pipe(browserSync.stream())
+} 
 
 function build() {
     return src([
+        // общие скрипты и стили
         'app/css/style.min.css',
         'app/fonts/**/*',
         'app/js/main.min.js',
         'app/_fonts.css',
-        'app/*.html'
+        'app/js/common.js',
+        // Главная
+        'app/js/index.js',
+        // Каталог
+        'app/scss/catalog.css',
+        'app/js/products.js', 
+        // Страница товара
+        'app/scss/towar-card.css',
+        'app/js/towar.js', 
+        // О нас
+        'app/scss/about.css',
+        'app/js/about.js', 
+        // Комплексные
+        'app/scss/complex.css',
+        'app/js/complex.js', 
+        // Портфолио 
+        'app/js/portfolio.js', 
+        // Корзина и оформление аказа 
+        'app/scss/basket-checkout.css',
+        // 'app/scss/catalog.css',
+        'app/*.html' 
     ], { base: 'app' })
         .pipe(dest('dist'))
 }
@@ -120,8 +113,7 @@ function watching() {
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/*.html']).on('change', browserSync.reload);
 }
-
-// exports.styles = styles;
+ 
 exports.cssBundle = cssBundle; 
 exports.watching = watching;
 exports.browsersync = browsersync;

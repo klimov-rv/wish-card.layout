@@ -49,7 +49,7 @@ article, aside, footer, header, nav, section {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -471,11 +471,6 @@ html {
 
 abbr[title], abbr[data-original-title] {
   cursor: help;
-}
-
-a:not([href]):not([tabindex]) {
-  color: inherit;
-  text-decoration: none;
 }
 
 a:not([href]):not([tabindex]):focus {
@@ -1230,6 +1225,10 @@ output {
 
 .post-0 {
   margin-right: 0%;
+}
+
+.post-1 {
+  margin-right: 8.33333%;
 }
 
 .post-2 {
@@ -1995,7 +1994,7 @@ output {
     margin-left: -25%;
   }
   .pull-4-mc {
-    margin-left: -33.33333%; 
+    margin-left: -33.33333%;
   }
   .pull-5-mc {
     margin-left: -41.66667%;
@@ -2028,7 +2027,7 @@ output {
   padding-right: 0px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 .row {
@@ -2156,10 +2155,10 @@ output {
 }
 
 .cell-6 {
-  max-width: 66.66667%;
-  -webkit-flex-basis: 66.66667%;
-  -ms-flex-preferred-size: 66.66667%;
-  flex-basis: 66.66667%;
+  max-width: 50%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
 }
 
 .cell-7 {
@@ -3517,4 +3516,29 @@ output {
     -ms-flex-order: 1;
     order: 1;
   }
+}
+
+.is-grid {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row.is-grid>*, .row-reverse.is-grid>*, .col.is-grid>*, .col-reverse.is-grid>* {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.is-thin-grid {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.row.is-thin-grid>*, .row-reverse.is-thin-grid>*, .col.is-thin-grid>*, .col-reverse.is-thin-grid>* {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.row-padd {
+  padding-left: 15px;
+  padding-right: 15px;
 }

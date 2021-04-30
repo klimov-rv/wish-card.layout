@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site</title>
+    <link rel="preload" href="_fonts.css" as="style">
+    <link rel="stylesheet" type="text/css" href="_fonts.css">
+    <link rel="stylesheet" type="text/css" href="scss/normalise.css">
+    <link rel="stylesheet" type="text/css" href="scss/spider.css">
+
+    <link rel="stylesheet" type="text/css" href="scss/swiper.css">
+    <link rel="stylesheet" type="text/css" href="scss/aos.css">
+    <link rel="stylesheet" type="text/css" href="scss/fancybox.css">
+    <link rel="stylesheet" type="text/css" href="scss/hamburger.css">
+    <link rel="stylesheet" type="text/css" href="scss/mmenu-light.css">
+    <link rel="stylesheet" type="text/css" href="scss/theme.css">
+ 
+    <link rel="stylesheet" type="text/css" href="scss/responsive.css">
+
+    <!-- для продакшена - gulp + gulp build -->
+    <link rel="stylesheet" href="_fonts.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+</head>
+
+<body class="template-portfolio">
+    <div id="page">
+        <header class="site-header">
+            <div class="site-header__top container">
+                <!-- Десктоп шапка -->
+                <nav class="row">
+                    <a class="burger-mobile hide show-sm" href="#mmenu1">
+                        <span></span>
+                    </a>
+                    <a href="index.html" class="site-header__logo cell-2"
+                        title="Логотип">
+                        <img src="images/logo-site.svg" alt="Логотип">
+                    </a>
+                    <!-- in mobile -->
+                    <ul class="mtop-links hide show-sm">
+                        <li class="mtop-links__item">
+                            <a class="mtop-links__link icon-search" href="#">
+                                <div class="icon">
+                                </div>
+                            </a>
+                            <form action="/search" method="get"
+                                class="search_widget">
+                                <div class="inpt-group">
+                                    <input type="text" autocomplete="off"
+                                        class="search_widget-control" value=""
+                                        placeholder="Что вы ищете?">
+                                    <button type="submit"
+                                        class="btn search_widget-submit">
+                                    </button>
+                                    <div class="search_widget-result">
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="mtop-links__item">
+                            <a class="mtop-links__link icon-cart"
+                                href="basket.html">
+                                <div class="icon">
+                                    <div class="center_icon">
+                                        <span class="counter">6</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /end in mobile -->
+                </nav>
+            </div>
+
+            <div class="site-header__bottom">
+                <nav class="container">
+                    <a class="catalog-menu-mobile hide show-sm" href="#mmenu2">
+                        <span>Каталог</span>
+                    </a>
+                    <ul class="header-menu row">
+                        <a href="index.html"
+                            class="site-header__logo_negative cell-1"
+                            title="Логотип">
+                            <img src="images/logo-site_negative.svg"
+                                alt="Логотип">
+                        </a>
+                        <li class="header-menu__item"><a
+                                href="demo.html">Демо</a></li>
+                        <li class="header-menu__item"><a
+                                href="catalog-complex.html">Комплексные
+                                решения</a></li>
+                        <li class="header-menu__item"><a
+                                href="catalog-portfolio.html">Портфолио</a></li>
+                        <li class="header-menu__item"><a href="about.html">О
+                                компании</a></li>
+                        <li class="header-menu__item"><a
+                                href="oplata-dostavka.html">Доставка и
+                                оплата</a></li>
+                        <li class="header-menu__item"><a
+                                href="news.html">Новости</a></li>
+                        <li class="header-menu__item"><a
+                                href="contact.html">Контакты</a></li>
+                        <li class="header-menu__item basket">
+                            <a href="tel:+74951500454">+7 495 150-04-54</a>
+                            <a href="basket.html"
+                                class="basket__widget icon-cart">
+                                <div class="icon">
+                                    <div class="center_icon">
+                                        <span class="counter">6</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content">
+            <div class="main-wrapper">
+                <div class="container subheader">
+                    <div class="row">
+                        <div class="subheader__phone cell-3">
+                            <div class="phone-call">
+                                <i class="phone-call__icon"></i>
+                                <div class="phone-call__number">
+                                    <a href="tel:+74951500454"
+                                        class="phone-call__link">8 495
+                                        150-04-54</a>
+                                </div>
+                                
+                                <a data-fancybox data-src="#hidden-content-a" href="tel:+74951500454" class="btn btn-green phone-call__zakazat">Заказать звонок</a>
+                            </div>
+                        </div>
+                        <form action="/search" method="get"
+                            class="subheader__search_widget cell-7">
+                            <div class="inpt-group">
+                                <input type="text" autocomplete="off"
+                                    class="search_widget-control" value=""
+                                    placeholder="Что вы ищете?">
+                                <button type="submit"
+                                    class="btn search_widget-submit">
+                                </button>
+                                <div class="search_widget-result">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="subheader__basket basket cell-2">
+                            <a href="basket.html" class="basket__widget_green">
+                                <div class="basket__widget icon-cart">
+                                    <div class="icon">
+                                        <div class="center_icon">
+                                            <span class="counter">6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-text">
+                                    <span class="text-line">
+                                        6 товаров
+                                    </span>
+                                    <span class="text-line">
+                                        799 183 тг
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="breadcrumb__wrapper row row-padd">
+                        <ul class="breadcrumb cell-12">
+                            <li class="breadcrumb-item">
+                                <a class="breadcrumb-link" title="Главная"
+                                    href="/">Главная</a>
+                            </li> 
+                            <li class="breadcrumb-item">
+                                <span
+                                    class="breadcrumb-link current-page">Портфолио
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="container catalog-porfolio"> 
+                    <h2 class="section-header"><span class="with-tail">Портфолио</span></h2>
+                    <ul class="portfolio__list row is-grid">
+                        <li class="portfolio__item cell-4 product-card_regular_full">
+                            <a href="portfolio-card.html" class="img__relative">
+                                <img class="" src="images/portfolio1.jpg"
+                                    alt="">
+                                <span class="portfolio__name">
+                                    Работа в портфолио 1
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="portfolio__item cell-4 product-card_regular_full">
+                            <a href="portfolio-card.html" class="img__relative">
+                                <img class="" src="images/portfolio1.jpg"
+                                    alt="">
+                                <span class="portfolio__name">
+                                    Работа в портфолио 1
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="portfolio__item cell-4 product-card_regular_full">
+                            <a href="portfolio-card.html" class="img__relative">
+                                <img class="" src="images/portfolio1.jpg"
+                                    alt="">
+                                <span class="portfolio__name">
+                                    Работа в портфолио 1
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="portfolio__item cell-4 product-card_regular_full">
+                            <a href="portfolio-card.html" class="img__relative">
+                                <img class="" src="images/portfolio1.jpg"
+                                    alt="">
+                                <span class="portfolio__name">
+                                    Работа в портфолио 1
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <footer class="igroupFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="igroupFooter__col cell-2">
+                        <div class="logo-wrapper">
+                            <img class="igroupFooter__logo"
+                                src="images/logo-site_negative.svg"
+                                alt="Логотип">
+                        </div>
+                    </div>
+                    <div
+                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-3">
+                        <div class="fcol__title">Каталог</div>
+                        <ul class="fcol__list">
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Hifi Оборудование</a>
+                            </li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Аудио решения для
+                                    дома</a></li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Звуковое оборудование</a>
+                            </li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Звукоизоляция
+                                    помещений</a></li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Кинотеатральное
+                                    оборудование</a></li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Конференционные
+                                    системы</a></li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Оборудование для
+                                    спецэффектов</a></li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Радиосистемы</a></li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link_to-all">Просмотреть
+                                    каталог</a></li>
+                        </ul>
+                    </div>
+                    <div
+                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-2">
+                        <div class="fcol__title">Покупателю</div>
+                        <ul class="fcol__list">
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Доставка и оплата</a>
+                            </li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Комплексные решения</a>
+                            </li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link_to-all">Политика
+                                    конфиденциаьности</a></li>
+                        </ul>
+                    </div>
+                    <div
+                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-2">
+                        <div class="fcol__title">Компания</div>
+                        <ul class="fcol__list">
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">О компании</a></li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Новости</a></li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Портфолио</a></li>
+                            <li class="fcol__item"><a href="catalog.html"
+                                    class="fcol__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div
+                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-3">
+                        <ul class="fcol__contacts">
+                            <li><a class="info-big" href="tel:+74951500454">8
+                                    495 150-04-54</a>
+                            </li>
+                            <li><a class="info-big"
+                                    href="mailto:info@install-group">info@install-group</a>
+                            </li>
+                            <li class="info-adress">
+                                <span class="info-adress__title">Город</span>
+                                <span class="info-adress__worktime">пр-т
+                                    Лобановского, 196
+                                    (пн-пт. 9:00-18:00; сб. 9:00-16:00)</span>
+                            </li>
+                            <li class="info-adress">
+                                <span class="info-adress__title">Город</span>
+                                <span class="info-adress__worktime">пр-т
+                                    Лобановского, 196
+                                    (пн-пт. 9:00-18:00; сб. 9:00-16:00)</span>
+                            </li>
+                        </ul>
+                        <ul class="social-list is-icon-font">
+                            <li class="social-list__item list-item">
+                                <a target="blank" title="Vkontakte"
+                                    href="http://vk.com/"
+                                    class="social-list__link is-vk">
+                                    <i class="fab fa-vk" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-list__item list-item">
+                                <a target="blank" title="Facebook"
+                                    href="http://facebook.com/"
+                                    class="social-list__link is-facebook">
+                                    <i class="fab fa-facebook"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-list__item list-item">
+                                <a target="blank" title="Instagram"
+                                    href="http://instagram.com/"
+                                    class="social-list__link is-instagram">
+                                    <i class="fab fa-instagram"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-list__item list-item">
+                                <a target="blank" title="YouTube"
+                                    href="http://youtube.com/"
+                                    class="social-list__link is-youtube">
+                                    <i class="fab fa-youtube"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-list__item list-item">
+                                <a target="blank" title="Twitter"
+                                    href="http://twitter.com/"
+                                    class="social-list__link is-twitter">
+                                    <i class="fab fa-twitter"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div type="button" class="js-scroll_top scroll_top">
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <!-- Мобильное сайд-меню 1 -->
+    <nav id="mmenu1" data-mmenu-title="Меню">
+        <ul>
+            <a href="/index.html" class="logotype in-mobile">
+                <img src="assets/logo-icon-only-black.svg" alt="">
+            </a>
+            <li class="mmenu__item"><a href="catalog.html">
+                    Демо каталог</a>
+            </li>
+            <li class="mmenu__item"><a href="tovar-card.html">
+                    Демо Товар</a>
+            </li>
+            <li class="mmenu__item"><a href="about.html">
+                    Демо о компании</a>
+            </li>
+            <li class="mmenu__item"><a href="catalog-complex.html">
+                    Демо комплекс каталог</a>
+            </li>
+            <li class="mmenu__item"><a href="complex-card.html">
+                    Демо Комплекс</a>
+            </li>
+            <li class="mmenu__item"><a href="catalog-portfolio.html">
+                    Демо Портфолио</a>
+            </li>
+            <li class="mmenu__item"><a href="oplata-dostavka.html">
+                    Оплата и доставка</a>
+            </li>
+            <li class="mmenu__item"><a href="news.html">
+                    Демо Новости</a>
+            </li>
+            <li class="mmenu__item"><a href="news-card.html">
+                    Демо Новость</a>
+            </li>
+            <li class="mmenu__item"><a href="contact.html">
+                    Демо Контакты</a>
+            </li>
+            <li class="mmenu__item"><a href="basket.html">
+                    Демо Корзина</a>
+            </li>
+            <li class="mmenu__item"><a href="basket-checkout.html">
+                    Демо Оформление заказа</a>
+            </li>
+
+            <li class="mobile__additional-info">
+                <div class="phone-call">
+                    <div class="phone-call__number">
+                        <a href="tel:+74951500454" class="phone-call__link">8
+                            495 150-04-54</a>
+                    </div>
+                    <a href="tel:+74951500454"
+                        class="btn btn-green phone-call__zakazat">Заказать
+                        звонок</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- /end Мобильное сайд-меню 1 -->
+
+    <!-- Мобильное сайд-меню 2 (каталог) -->
+    <nav id="mmenu2" data-mmenu-title="Каталог">
+        <ul>
+            <div class="mmenu__header">
+                Каталог
+            </div>
+            <li class="mmenu__item">
+                <a href="#">Hifi Оборудование</a>
+            </li>
+
+            <li class="mmenu__item">
+                <a href="#" class="mmenu__link">Системы трансляции и
+                    оповещения</a>
+                <ul>
+                    <div class="mmenu__header">
+                        Сигнализации
+                    </div>
+                    <a href="#" class="mmenu__link-to-catalog">Перейти в
+                        категорию “Системы трансляции и оповещения”</a>
+                    <li>
+                        <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                        <a href="#">Трансляционные акустические системы</a>
+                    </li>
+                    <li>
+                        <a href="#">Трансляционные матрицы</a>
+                    </li>
+                    <li>
+                        <a href="#">Трансляционные проигрыватели</a>
+                    </li>
+                    <li>
+                        <a href="#">Трансляционные усилители</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                    Звуковое оборудование</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                    Звукоизоляция помещений</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                    Кинотеатральное оборудование</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                    Конференционные системы</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                    Конференционные системы</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                    Конференционные системы</a>
+            </li>
+            <li class="mmenu__item"><a href="#">
+                    Конференционные системы</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /end Мобильное сайд-меню 2 (каталог) -->
+
+    <!-- всплывающие окна -->
+    
+    <div style="display: none;" id="hidden-content-a">
+        <h2>Hello!</h2>
+        <p>You are awesome!</p>
+    </div>
+    
+    <!-- /end всплывающие окна -->
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="libs/swiper/swiper.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
+    <script src="libs/mmenu/mmenu-light.js"></script>
+    <script src="libs/jquery.fancybox/fancybox.js"></script>
+    <script src="libs/rangeSlider/ion.rangeSlider.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.about.container {
+    --swiper-theme-color: white;
+    min-height: 500px;
+}
+
+.about .swiper-pagination__wrapper .swiper-pagination-bullet-active {
+    border: 1.76596px solid white;
+    background: white;
+}
+
+
+.about-slider__img_wrapper img {
+    width: 100%;
+} 
+
+.person-losung {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.person-adress {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+.template-about .solutions__sub { 
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px; 
+}
