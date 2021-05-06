@@ -766,7 +766,7 @@ output {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 340px) {
   .text-right-mc {
     text-align: right;
   }
@@ -1098,7 +1098,7 @@ output {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 340px) {
   .hide-mc {
     display: none !important;
   }
@@ -1941,7 +1941,7 @@ output {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 340px) {
   .push-0-mc {
     margin-left: 0%;
   }
@@ -2591,7 +2591,7 @@ output {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 340px) {
   .cell-1-mc {
     max-width: 8.33333%;
     -webkit-flex-basis: 8.33333%;
@@ -3453,7 +3453,7 @@ output {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 340px) {
   .flex-start-mc {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -3541,4 +3541,8 @@ output {
 .row-padd {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+::focus-visible {
+  outline: 0px dotted;
 }

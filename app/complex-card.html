@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="scss/responsive.css">
 
     <!-- для продакшена - gulp + gulp build -->
-    <link rel="stylesheet" href="_fonts.css"> 
+    <link rel="stylesheet" href="_fonts.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
 </head>
@@ -33,37 +33,44 @@
         <header class="site-header">
             <div class="site-header__top container">
                 <!-- Десктоп шапка -->
-                <nav class="row">
-                    <a class="burger-mobile hide show-sm" href="#mmenu1">
-                        <span></span>
+                <nav class="row flex-middle">
+                    <a class="burger-mobile hide show-flex-sm hamburger hamburger--slider js-hamburger cell-2-sm"
+                        href="#mmenu1">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
                     </a>
-                    <a href="index.html" class="site-header__logo cell-2"
+                    <a href="index.html"
+                        class="site-header__logo cell-2 cell-6-sm"
                         title="Логотип">
                         <img src="images/logo-site.svg" alt="Логотип">
                     </a>
                     <!-- in mobile -->
-                    <ul class="mtop-links hide show-sm">
+                    <ul class="mtop-links hide show-flex-sm cell-4-sm row">
                         <li class="mtop-links__item">
                             <a class="mtop-links__link icon-search" href="#">
-                                <div class="icon">
+                                <div class="center_icon">
+                                    <i class="inpt-group__icon-search"
+                                        onclick="openSearch(event)"></i>
                                 </div>
                             </a>
                             <form action="/search" method="get"
                                 class="search_widget">
-                                <div class="inpt-group">
+                                <div class="inpt-group mtop-links__inpt-group">
                                     <input type="text" autocomplete="off"
-                                        class="search_widget-control" value=""
-                                        placeholder="Что вы ищете?">
+                                        class="search_widget-control mtop-links__search"
+                                        value="" placeholder="Что вы ищете?">
                                     <button type="submit"
                                         class="btn search_widget-submit">
                                     </button>
-                                    <div class="search_widget-result">
+                                    <div class="close-search"
+                                        onclick="closeSearch(event)">
                                     </div>
                                 </div>
                             </form>
                         </li>
                         <li class="mtop-links__item">
-                            <a class="mtop-links__link icon-cart"
+                            <a class="mtop-links__link basket__widget icon-cart"
                                 href="basket.html">
                                 <div class="icon">
                                     <div class="center_icon">
@@ -79,10 +86,11 @@
 
             <div class="site-header__bottom">
                 <nav class="container">
-                    <a class="catalog-menu-mobile hide show-sm" href="#mmenu2">
-                        <span>Каталог</span>
+                    <a class="catalog-menu-mobile hide show-flex-sm"
+                        href="#mmenu2">
+                        <span>Каталог товаров</span>
                     </a>
-                    <ul class="header-menu row">
+                    <ul class="header-menu row hide-sm">
                         <a href="index.html"
                             class="site-header__logo_negative cell-1"
                             title="Логотип">
@@ -106,7 +114,8 @@
                         <li class="header-menu__item"><a
                                 href="contact.html">Контакты</a></li>
                         <li class="header-menu__item basket">
-                            <a href="tel:+74951500454">+7 495 150-04-54</a>
+                            <a class="hover-bottom-underline"
+                                href="tel:+74951500454">+7 495 150-04-54</a>
                             <a href="basket.html"
                                 class="basket__widget icon-cart">
                                 <div class="icon">
@@ -122,18 +131,20 @@
         </header>
         <div class="content">
             <div class="main-wrapper">
-                <div class="container subheader">
+                <div class="container subheader hide-sm">
                     <div class="row">
                         <div class="subheader__phone cell-3">
                             <div class="phone-call">
                                 <i class="phone-call__icon"></i>
                                 <div class="phone-call__number">
-                                    <a href="tel:+74951500454"
-                                        class="phone-call__link">8 495
+                                    <a class="phone-call__link hover-bottom-underline"
+                                        href="tel:+74951500454">8 495
                                         150-04-54</a>
                                 </div>
-                                
-                                <a data-fancybox data-src="#hidden-content-a" href="tel:+74951500454" class="btn btn-green phone-call__zakazat">Заказать звонок</a>
+
+                                <a data-fancybox data-src="#hidden-content-a"
+                                    class="btn btn-green phone-call__zakazat">Заказать
+                                    звонок</a>
                             </div>
                         </div>
                         <form action="/search" method="get"
@@ -169,6 +180,8 @@
                             </a>
                         </div>
                     </div>
+                </div>
+                <section class="container">
                     <div class="breadcrumb__wrapper row row-padd">
                         <ul class="breadcrumb cell-12">
                             <li class="breadcrumb-item">
@@ -186,14 +199,14 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </section>
                 <section class="container complex-card">
 
                     <h2 class="section-header"><span
                             class="with-tail">Клубам</span></h2>
 
                     <div class="row">
-                        <div class="row with-buttons cell-6">
+                        <div class="row with-buttons cell-6 cell-12-sm">
                             <a href="#" class="btn btn-green tablinks active"
                                 onclick="openTab(event, 'tab-0')"
                                 id="defaultOpen">Дискотека</a>
@@ -423,12 +436,16 @@
                             проект</span></h2>
                     <div class="row">
 
-                        <p class="font-black">
+                        <p class="font-black hide-sm">
                             Получите бесплатную консультацию специалиста и
-                            расчет оборудования по телефону <strong> <a href="tel:+74351901243">+7 435 190-12-43</a></strong> или заполните форму </p>
+                            расчет оборудования по телефону <strong> <a
+                                    class="hover-bottom-underline"
+                                    href="tel:+74351901243">+7 435
+                                    190-12-43</a></strong> или заполните форму
+                        </p>
                     </div>
                     <form action="" class="row is-grid">
-                        <div class="co-input cell-4">
+                        <div class="co-input cell-4 cell-12-sm">
                             <label class="co-input-label"
                                 for="client_name">Имя</label>
                             <input autocomplete="off" type="text"
@@ -436,7 +453,7 @@
                                 class="co-input-field">
                         </div>
 
-                        <div class="co-input cell-4">
+                        <div class="co-input cell-4 cell-12-sm">
                             <label class="co-input-label"
                                 for="client_mail">Email</label>
                             <input autocomplete="off" type="text"
@@ -444,7 +461,7 @@
                                 class="co-input-field">
                         </div>
 
-                        <div class="co-input cell-4">
+                        <div class="co-input cell-4 cell-12-sm">
                             <label class="co-input-label"
                                 for="client_phone">Телефон</label>
                             <input autocomplete="off" type="text"
@@ -463,7 +480,9 @@
                 <section class="container complex-full">
                     <h2 class="section-header"><span class="with-tail">Готовые
                             решения</span></h2>
-                    <div class="row is-grid">
+
+                    <!-- Статичные карточки -->
+                    <div class="row is-grid hide-sm">
                         <div class="cell-4">
                             <form
                                 class="product-wrapper product-card_regular product-card_regular_full"
@@ -494,7 +513,9 @@
                             </form>
                         </div>
                         <div class="cell-4">
-                            <form class="product-wrapper product-card_regular product-card_regular_full" action="basket.html" method="post">
+                            <form
+                                class="product-wrapper product-card_regular product-card_regular_full"
+                                action="basket.html" method="post">
                                 <div
                                     class="product-card__image product-img__wrap">
                                     <a href="tovar-card.html"
@@ -551,18 +572,104 @@
                         </div>
                     </div>
 
+                    <!-- Карусель на мобилке -->
+                    <div class="carousel__wrapper slider hide show-sm"
+                        id="complex-card-carousel-2">
+                        <ul class="swiper-wrapper">
+                            <li class="complex-full__item swiper-slide">
+                                <form class="product-wrapper product-card_regular product-card_regular_full"
+                                    action="basket.html" method="post">
+                                    <div
+                                        class="product-card__image product-img__wrap">
+                                        <a href="tovar-card.html"
+                                            class="img__relative">
+                                            <img class="product-img"
+                                                src="images/portfolio1.jpg"
+                                                alt="продукт">
+                                        </a>
+                                        <span class="prod-info__price">
+                                            <small>Решения от:</small>
+                                            <b>763.00 тг</b>
+                                        </span>
+                                    </div>
+                                    <div class="product-card__info">
+                                        <div class="prod-info__some-text"> 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        </div>
+                                    </div>
+                                </form>
+                            </li> 
+                            <li class="complex-full__item swiper-slide">
+                                <form class="product-wrapper product-card_regular product-card_regular_full"
+                                    action="basket.html" method="post">
+                                    <div
+                                        class="product-card__image product-img__wrap">
+                                        <a href="tovar-card.html"
+                                            class="img__relative">
+                                            <img class="product-img"
+                                                src="images/portfolio1.jpg"
+                                                alt="продукт">
+                                        </a>
+                                        <span class="prod-info__price">
+                                            <small>Решения от:</small>
+                                            <b>763.00 тг</b>
+                                        </span>
+                                    </div>
+                                    <div class="product-card__info">
+                                        <div class="prod-info__some-text"> 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        </div>
+                                    </div>
+                                </form>
+                            </li> 
+                            <li class="complex-full__item swiper-slide">
+                                <form class="product-wrapper product-card_regular product-card_regular_full"
+                                    action="basket.html" method="post">
+                                    <div
+                                        class="product-card__image product-img__wrap">
+                                        <a href="tovar-card.html"
+                                            class="img__relative">
+                                            <img class="product-img"
+                                                src="images/portfolio1.jpg"
+                                                alt="продукт">
+                                        </a>
+                                        <span class="prod-info__price">
+                                            <small>Решения от:</small>
+                                            <b>763.00 тг</b>
+                                        </span>
+                                    </div>
+                                    <div class="product-card__info">
+                                        <div class="prod-info__some-text"> 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        </div>
+                                    </div>
+                                </form>
+                            </li> 
+                        </ul>
+                    </div>
                 </section>
 
                 <section class="container dont-fix-bg complex-card_gray">
-                    <h2 class="section-header"><span class="with-tail">Заявка на комплексное оснащение</span></h2>
+                    <h2 class="section-header"><span class="with-tail">Заявка на
+                            комплексное оснащение</span></h2>
                     <div class="row">
 
-                        <p class="font-black">
+                        <p class="font-black hide-sm">
                             Получите бесплатную консультацию специалиста и
-                            расчет оборудования по телефону <strong> <a href="tel:+74351901243">+7 435 190-12-43</a></strong> или заполните форму </p>
+                            расчет оборудования по телефону <strong> <a
+                                    class="hover-bottom-underline"
+                                    href="tel:+74351901243">+7 435
+                                    190-12-43</a></strong> или заполните форму
+                        </p>
                     </div>
                     <form action="" class="row is-grid">
-                        <div class="co-input cell-4">
+                        <div class="co-input cell-4 cell-12-sm">
                             <label class="co-input-label"
                                 for="client_name">Имя</label>
                             <input autocomplete="off" type="text"
@@ -570,7 +677,7 @@
                                 class="co-input-field">
                         </div>
 
-                        <div class="co-input cell-4">
+                        <div class="co-input cell-4 cell-12-sm">
                             <label class="co-input-label"
                                 for="client_mail">Email</label>
                             <input autocomplete="off" type="text"
@@ -578,28 +685,28 @@
                                 class="co-input-field">
                         </div>
 
-                        <div class="co-input cell-4">
+                        <div class="co-input cell-4 cell-12-sm">
                             <label class="co-input-label"
                                 for="client_phone">Телефон</label>
                             <input autocomplete="off" type="text"
                                 id="client_phone" name="client[phone]" value=""
                                 class="co-input-field">
                         </div>
-                        <div class="co-input cell-4">
+                        <div class="co-input cell-4 cell-12-sm">
                             <input type="file" name="file-input_custom"
                                 id="file-input_custom">
                             <label for="file-input_custom"
                                 class="file-input__btn">
                                 <span>Загрузить схему помещения</span></label>
-                            <span class="file-input__subtext">если есть, можно от руки</span>
+                            <span class="file-input__subtext">если есть, можно
+                                от руки</span>
                         </div>
-                        <div class="co-input cell-4">
-                            <label class="co-input-label"
-                                for="client_phone">Телефон</label>
+                        <div class="co-input cell-4 cell-12-sm">
+                            <label class="co-input-label">Сообщение</label>
                             <textarea class="co-input-field">
                                 </textarea>
                         </div>
-                        <div class="co-input co-input_centered cell-4">
+                        <div class="co-input co-input_centered cell-4 cell-12-sm">
                             <button type="submit"
                                 class="news-section__btn btn btn-green2_big">
                                 Отправить
@@ -609,6 +716,32 @@
                 </section>
 
                 <section class="carousel portfolio container">
+                    <ul class="contacts-green-block hide show-sm">
+                        <li>
+                            <span class="info-phone_content">
+                                <a class="hover-bottom-underline" href="tel:+7 495 150-04-54">+7 495 150-04-54</a>
+                            </span>
+                            <small class="info-type-contact">Связаться с
+                                менеджером</small>
+
+                        </li>
+                        <li>
+                            <span class="info-phone_content">
+                                <a class="hover-bottom-underline" href="tel:+7 495 150-04-54">+7 495 150-04-54</a>
+                            </span>
+                            <small class="info-type-contact info-type-contact_viber">Связаться
+                                через Viber</small>
+
+                        </li>
+                        <li>
+                            <span class="info-phone_content">
+                                <a class="hover-bottom-underline" href="tel:+7 495 150-04-54">+7 495 150-04-54</a>
+                            </span>
+                            <small class="info-type-contact info-type-contact_tg">Связаться
+                                через Telegram</small>
+
+                        </li>
+                    </ul>
                     <h3 class="section-header"><span
                             class="with-tail">Выполненые работы</span></h3>
                     <div class="carousel__wrapper slider" id="carousel-1">
@@ -668,7 +801,7 @@
         <footer class="igroupFooter">
             <div class="container">
                 <div class="row">
-                    <div class="igroupFooter__col cell-2">
+                    <div class="igroupFooter__col cell-2 hide-sm">
                         <div class="logo-wrapper">
                             <img class="igroupFooter__logo"
                                 src="images/logo-site_negative.svg"
@@ -676,7 +809,7 @@
                         </div>
                     </div>
                     <div
-                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-3">
+                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-3 cell-12-sm">
                         <div class="fcol__title">Каталог</div>
                         <ul class="fcol__list">
                             <li class="fcol__item"><a href="catalog.html"
@@ -708,7 +841,7 @@
                         </ul>
                     </div>
                     <div
-                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-2">
+                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-2 cell-12-sm">
                         <div class="fcol__title">Покупателю</div>
                         <ul class="fcol__list">
                             <li class="fcol__item"><a href="catalog.html"
@@ -723,7 +856,7 @@
                         </ul>
                     </div>
                     <div
-                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-2">
+                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-2 cell-12-sm">
                         <div class="fcol__title">Компания</div>
                         <ul class="fcol__list">
                             <li class="fcol__item"><a href="catalog.html"
@@ -737,10 +870,11 @@
                         </ul>
                     </div>
                     <div
-                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-3">
+                        class="igroupFooter__fcol igroupFooter__fcol_padd cell-3 cell-12-sm">
                         <ul class="fcol__contacts">
-                            <li><a class="info-big" href="tel:+74951500454">8
-                                    495 150-04-54</a>
+                            <li><a class="info-big"
+                                    class="hover-bottom-underline"
+                                    href="tel:+74951500454">8 495 150-04-54</a>
                             </li>
                             <li><a class="info-big"
                                     href="mailto:info@install-group">info@install-group</a>
@@ -812,9 +946,6 @@
     <!-- Мобильное сайд-меню 1 -->
     <nav id="mmenu1" data-mmenu-title="Меню">
         <ul>
-            <a href="/index.html" class="logotype in-mobile">
-                <img src="assets/logo-icon-only-black.svg" alt="">
-            </a>
             <li class="mmenu__item"><a href="catalog.html">
                     Демо каталог</a>
             </li>
@@ -855,36 +986,27 @@
             <li class="mobile__additional-info">
                 <div class="phone-call">
                     <div class="phone-call__number">
-                        <a href="tel:+74951500454" class="phone-call__link">8
-                            495 150-04-54</a>
+                        <a class="phone-call__link hover-bottom-underline"
+                            href="tel:+74951500454">8 495 150-04-54</a>
                     </div>
-                    <a href="tel:+74951500454"
-                        class="btn btn-green phone-call__zakazat">Заказать
-                        звонок</a>
                 </div>
+                <a class="btn btn-green phone-call__zakazat">Заказать звонок</a>
             </li>
-
         </ul>
+        <a href="#mmenu1-close" class="close-mmenu"></a>
     </nav>
     <!-- /end Мобильное сайд-меню 1 -->
 
     <!-- Мобильное сайд-меню 2 (каталог) -->
     <nav id="mmenu2" data-mmenu-title="Каталог">
         <ul>
-            <div class="mmenu__header">
-                Каталог
-            </div>
             <li class="mmenu__item">
                 <a href="#">Hifi Оборудование</a>
             </li>
-
             <li class="mmenu__item">
                 <a href="#" class="mmenu__link">Системы трансляции и
                     оповещения</a>
                 <ul>
-                    <div class="mmenu__header">
-                        Сигнализации
-                    </div>
                     <a href="#" class="mmenu__link-to-catalog">Перейти в
                         категорию “Системы трансляции и оповещения”</a>
                     <li>
@@ -926,16 +1048,174 @@
                     Конференционные системы</a>
             </li>
         </ul>
+        <a href="#mmenu2-close" class="close-mmenu"></a>
     </nav>
     <!-- /end Мобильное сайд-меню 2 (каталог) -->
 
     <!-- всплывающие окна -->
-    
+
     <div style="display: none;" id="hidden-content-a">
-        <h2>Hello!</h2>
-        <p>You are awesome!</p>
+        <div class="row flex-center">
+
+            <span class="cell-12 title-type-3">
+                Заявка на комплексное оснащение
+            </span>
+            <div class="push-2 cell-8 post-2 push-0-sm cell-12-sm post-0-sm flex-center">
+                <p class="font-black hide-sm">
+                    Получите бесплатную консультацию специалиста и
+                    расчет оборудования по телефону <strong>+7 435
+                        190-12-43</strong> или заполните форму </p>
+            </div>
+        </div>
+        <form action="" class="row is-grid">
+            <div class="co-input cell-4 cell-12-sm">
+                <label class="co-input-label" for="client_name">Имя</label>
+                <input autocomplete="off" type="text" id="client_name"
+                    name="client[name]" value="" class="co-input-field">
+            </div>
+
+            <div class="co-input cell-4 cell-12-sm">
+                <label class="co-input-label" for="client_mail">Email</label>
+                <input autocomplete="off" type="text" id="client_mail"
+                    name="client[mail]" value="" class="co-input-field">
+            </div>
+
+            <div class="co-input cell-4 cell-12-sm">
+                <label class="co-input-label" for="client_phone">Телефон</label>
+                <input autocomplete="off" type="text" id="client_phone"
+                    name="client[phone]" value="" class="co-input-field">
+            </div>
+            <div class="co-input cell-4 cell-12-sm">
+                <input type="file" name="file-input_custom"
+                    id="file-input_custom">
+                <label for="file-input_custom" class="file-input__btn">
+                    <span>Загрузить схему помещения</span></label>
+                <span class="file-input__subtext">если есть, можно от
+                    руки</span>
+            </div>
+            <div class="co-input cell-4 cell-12-sm">
+                <label class="co-input-label" for="client_phone">Телефон</label>
+                <textarea class="co-input-field">
+                    </textarea>
+            </div>
+            <div class="co-input co-input_centered cell-4 cell-12-sm">
+                <button type="submit"
+                    class="news-section__btn btn btn-green2_big">
+                    Отправить
+                </button>
+            </div>
+        </form>
+        <div class="super-link row">
+            <span class="super-link__text">Горячие новинки уже у нас!</span>
+            <a class="super-link__link" href="#">Просмотреть</a>
+        </div>
     </div>
-    
+    <div style="display: none;" id="hidden-content-b">
+        Здесь пока пусто
+    </div>
+    <div style="display: none;" id="hidden-content-c">
+        <div class="row flex-center">
+            <div class="slider-controls-holder">
+                <picture> 
+                    <source media="(max-width:480px)" srcset="images/icon_order-success-mobile.svg"> 
+                    <img src="images/icon_order-success.svg" alt="">
+                </picture>
+            </div>
+            <span class="cell-12 title-type-3 hide-sm">
+                Спасибо, заказ успешно оформлен!
+            </span>
+            <span class="cell-12 title-type-3 hide show-sm">
+               Успешная оплата
+            </span>
+            <div class="push-2 cell-8 post-2 push-0-sm cell-12-sm post-0-sm flex-center">
+                <p class="font-black">Наш менеджер свяжется с Вами в близжайшее
+                    время для уточнений деталей заказа</p>
+                <button type="submit"
+                    class="news-section__btn btn btn-green2_big"
+                    data-fancybox-close="" title="Close">
+                    вернуться в магазин
+                </button>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;" id="hidden-content-d">
+        <div class="row flex-center">
+            <div class="slider-controls-holder">
+                
+                <picture> 
+                    <source media="(max-width:480px)" srcset="images/icon_order-fail-mobile.svg"> 
+                    <img src="images/icon_order-fail.svg" alt="">
+                </picture>
+            </div>
+            <span class="cell-12 title-type-3">
+                Неудачный платеж
+            </span>
+            <div class="push-2 cell-8 post-2 push-0-sm cell-12-sm post-0-sm flex-center">
+                <p class="font-black">Попробуйте еще раз или свяжитесь с
+                    менеджером для помощи в оформлении заказа</p>
+                <div class="row is-grid">
+                    <div class="cell-6 cell-12-sm show-flex flex-center"> 
+                        <button type="submit"
+                            class="news-section__btn btn btn-green2_big"
+                            data-fancybox-close="" title="Close">
+                            оформить повторно
+                        </button>
+                    </div>
+                    <div class="cell-6 hide-sm show-flex flex-center"> 
+                        <button type="submit"
+                            class="news-section__btn btn btn-green_big"
+                            data-fancybox-close="" title="Close">
+                            помощь менеджера
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div style="display: none;" id="hidden-content-e">
+
+        <div class="quick-buy col flex-center">
+            <div class="modal-heading title-type-3">Быстрая покупка</div>
+
+            <a href="tovar-card.html" class="product-img__relative">
+                <img class="product-img" src="images/prod/prod_1.jpg"
+                    alt="продукт">
+            </a>
+            <span class="font-black quick-buy__info">
+                Заказаны следующие товары:
+                <b class="quick-buy__info_b">Аудиопроцессоры для
+                    конференций Shure IntelliMix P300-IMX
+                    доступны для заказа</b>
+            </span>
+
+            <span class="font-black quick-buy__info">
+                На общую стоимость: 
+                <b class="quick-buy__info_b"> 699 899.00 тг</b>
+            </span>
+
+            <form action="" method="post">
+                <div class="co-input cell-12">
+                    <label class="co-input-label" for="client_name">Имя:</label>
+                    <input autocomplete="off" type="text" id="client_name"
+                        name="client[name]" value="" class="co-input-field">
+                </div>
+                <div class="co-input cell-12">
+                    <label class="co-input-label co-input-label__required"
+                        for="client_name">Номер
+                        телефона:</label>
+                    <input autocomplete="off" type="text" id="client_name"
+                        name="client[name]" value="" class="co-input-field">
+                </div>
+                <div class="co-input cell-12">
+                    <label class="co-input-label"
+                        for="client_phone">Комментарий:</label>
+                    <textarea
+                        class="co-input-field">                    </textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- /end всплывающие окна -->
     <script src="libs/jquery/jquery.js"></script>
     <script src="libs/swiper/swiper.min.js"></script>
@@ -944,8 +1224,7 @@
     <script src="libs/jquery.fancybox/fancybox.js"></script>
     <script src="libs/rangeSlider/ion.rangeSlider.js"></script>
 
-    <script src="js/common.js"></script>
-    <script src="js/complex.js"></script>
+    <!-- <script src="js/main.js"></script>  -->
     <script src="js/main.min.js"></script>
 </body>
 

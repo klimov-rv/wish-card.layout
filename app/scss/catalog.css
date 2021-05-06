@@ -215,7 +215,7 @@
     display: flex;
     justify-content: space-between;
     flex: 0 0 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .filter-is-activated {
@@ -235,13 +235,6 @@
     color: #FFFFFF;
 }
 
-.close {
-    background: url("../images/close-white.svg") no-repeat center center transparent;
-    display: block;
-    width: 17px;
-    height: 17px;
-    margin-left: 10px;
-} 
 
 .filter-submit_wrap {
     margin-top: 25px;

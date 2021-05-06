@@ -10,9 +10,9 @@
  */
 
 :root {
-    --mm-ocd-width: 80%;
-    --mm-ocd-min-width: 200px;
-    --mm-ocd-max-width: 440px
+    --mm-ocd-width: 100%;
+    --mm-ocd-min-width: 320px;
+    --mm-ocd-max-width: 480px
 }
 
 body.mm-ocd-opened {
@@ -283,9 +283,9 @@ body.mm-ocd-opened {
     content: none;
     display: none
 }
-
+ 
 .mm-spn.mm-spn--navbar:after {
-    content: attr(data-site-title);
+    content: attr(data-mmenu-title);
     display: block;
     position: absolute;
     top: 0;
@@ -303,9 +303,7 @@ body.mm-ocd-opened {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 
-    font-size: 28px;
-    font-family: "Amatic SC";
-    text-transform: uppercase;
+    font-size: 15px;  
 }
 
 .mm-spn.mm-spn--navbar.mm-spn--main:after {

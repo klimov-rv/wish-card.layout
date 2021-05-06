@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="scss/responsive.css">
 
     <!-- для продакшена - gulp + gulp build -->
-    <link rel="stylesheet" href="_fonts.css"> 
+    <link rel="stylesheet" href="_fonts.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     
 </head>
@@ -33,38 +33,43 @@
         <header class="site-header">
             <div class="site-header__top container">   
                 <!-- Десктоп шапка -->
-                <nav class="row"> 
-                    <a class="burger-mobile hide show-sm" href="#mmenu1">
-                        <span></span>
+                <nav class="row flex-middle">
+                    <a class="burger-mobile hide show-flex-sm hamburger hamburger--slider js-hamburger cell-2-sm" href="#mmenu1"> 
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
                     </a>
-                    <a href="index.html" class="site-header__logo cell-2"
+                    <a href="index.html" class="site-header__logo cell-2 cell-6-sm"
                         title="Логотип">
                         <img src="images/logo-site.svg" alt="Логотип"> 
                     </a>
                     <!-- in mobile -->
-                    <ul class="mtop-links hide show-sm">
+                    <ul class="mtop-links hide show-flex-sm cell-4-sm row">
                         <li class="mtop-links__item">
                             <a class="mtop-links__link icon-search" href="#">
-                                <div class="icon">
+                                <div class="center_icon"> 
+                                    <i class="inpt-group__icon-search" 
+                                    onclick="openSearch(event)"></i>
                                 </div>
                             </a>
                             <form action="/search" method="get"
                                 class="search_widget">
-                                <div class="inpt-group">
+                                <div class="inpt-group mtop-links__inpt-group">
                                     <input type="text" autocomplete="off"
-                                        class="search_widget-control"
+                                        class="search_widget-control mtop-links__search"
                                         value=""
                                         placeholder="Что вы ищете?">
                                     <button type="submit"
                                         class="btn search_widget-submit">
                                     </button>
-                                    <div class="search_widget-result">
+                                    <div class="close-search"
+                                    onclick="closeSearch(event)">
                                     </div>
                                 </div>
                             </form>
                         </li>
                         <li class="mtop-links__item">
-                            <a class="mtop-links__link icon-cart" href="basket.html">
+                            <a class="mtop-links__link basket__widget icon-cart" href="basket.html">
                                 <div class="icon">
                                     <div class="center_icon">
                                         <span class="counter">6</span>
@@ -79,10 +84,10 @@
             
             <div class="site-header__bottom">
                 <nav class="container"> 
-                    <a class="catalog-menu-mobile hide show-sm" href="#mmenu2">
-                        <span>Каталог</span>
+                    <a class="catalog-menu-mobile hide show-flex-sm" href="#mmenu2">
+                        <span>Каталог товаров</span>
                     </a>
-                    <ul class="header-menu row"> 
+                    <ul class="header-menu row hide-sm"> 
                         <a href="index.html" class="site-header__logo_negative cell-1" title="Логотип"> 
                             <img src="images/logo-site_negative.svg" alt="Логотип">
                         </a>
@@ -95,7 +100,7 @@
                         <li class="header-menu__item"><a href="news.html">Новости</a></li>
                         <li class="header-menu__item"><a href="contact.html">Контакты</a></li>  
                         <li class="header-menu__item basket">
-                            <a href="tel:+74951500454">+7 495 150-04-54</a> 
+                            <a class="hover-bottom-underline" href="tel:+74951500454">+7 495 150-04-54</a> 
                             <a href="basket.html" class="basket__widget icon-cart">
                                 <div class="icon">
                                     <div class="center_icon">
@@ -110,16 +115,16 @@
         </header>
         <div class="content">
             <div class="main-wrapper">
-                <div class="container subheader">
+                <div class="container subheader hide-sm">
                     <div class="row">
                         <div class="subheader__phone cell-3"> 
                             <div class="phone-call">
                                 <i class="phone-call__icon"></i>
                                 <div class="phone-call__number">
-                                    <a href="tel:+74951500454" class="phone-call__link">8 495 150-04-54</a> 
+                                    <a class="phone-call__link hover-bottom-underline" href="tel:+74951500454">8 495 150-04-54</a> 
                                 </div>
                                  
-                                <a data-fancybox data-src="#hidden-content-a" href="tel:+74951500454" class="btn btn-green phone-call__zakazat">Заказать звонок</a>
+                                <a data-fancybox data-src="#hidden-content-a" class="btn btn-green phone-call__zakazat" >Заказать звонок</a>
                             </div>  
                         </div>
                         <form action="/search" method="get" class="subheader__search_widget cell-7">
@@ -156,7 +161,7 @@
                 </div>
                 <section class="container promo index dont-fix-bg"> 
                     <div class="row"> 
-                        <div class="catalog-menu cell-3">
+                        <div class="catalog-menu cell-3 hide-sm">
                             <nav class="catalog-menu__wrap">
                                 <div class="catalog-menu__header">
                                     Каталог
@@ -203,13 +208,13 @@
                                 </div>
                             </nav>
                         </div>
-                        <div class="promo__wrap cell-7">
+                        <div class="promo__wrap cell-7 cell-12-sm">
                             <div class="promo-slider__wrap slider" id="promoSlider"> 
                                 <div class="swiper-wrapper"> 
                                     <div class="swiper-slide" data-swiper-parallax="-23%"> 
                                         <div class="promo-slider__img_wrapper"> 
                                             <img class="promo-slider__img" src="images/image_16.png" alt=""> 
-                                            <div class="promo-slider__text_wrapper cell-5" data-swiper-parallax-scale="0.35">
+                                            <div class="promo-slider__text_wrapper cell-5 cell-12-sm" data-swiper-parallax-scale="0.35">
                                                 <h1 class="promo-slider__text" data-swiper-parallax="-1700">
                                                     Беспроводная система 5 в 1 
                                                 </h1>
@@ -222,7 +227,7 @@
                                     <div class="swiper-slide" data-swiper-parallax="-23%">
                                         <div class="promo-slider__img_wrapper"> 
                                             <img class="promo-slider__img" src="images/image_16.png" alt=""> 
-                                            <div class="promo-slider__text_wrapper cell-5" data-swiper-parallax-scale="0.35">
+                                            <div class="promo-slider__text_wrapper cell-5 cell-12-sm" data-swiper-parallax-scale="0.35">
                                                 <h1 class="promo-slider__text" data-swiper-parallax="-1700">
                                                     Проводная система 25 в 1 
                                                 </h1>
@@ -242,7 +247,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="promo-banner cell-2">
+                        <div class="promo-banner cell-2 hide-sm">
                             <a href="#" class="promo-banner__one" style="background-image: url(images/side-banner-top.jpg);"> 
                             </a>
                             <a href="#" class="promo-banner__two" style="background-image: url(images/side-banner-bottom.jpg);">  
@@ -252,8 +257,8 @@
                 </section>
                 <section class="container solutions">
                     <h2 class="section-header"><span class="with-tail">Комплексные решения</span></h2>
-                    <ul class="solutions__list row is-grid">
-                        <li class="solutions__item_wrap cell-4">
+                    <ul class="solutions__list row is-grid hide-sm">
+                        <li class="solutions__item_wrap cell-4 cell-12-sm">
                             <div class="solutions__item">
                                 <div class="solutions__item_visible"> 
                                     <i class="solutions__icon icon icons-font__indexComplex_1 "></i><a href="complex-card.html" class="solutions__link">Клубам</a>
@@ -266,7 +271,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="solutions__item_wrap cell-4">
+                        <li class="solutions__item_wrap cell-4 cell-12-sm">
                             <div class="solutions__item">
                                 <div class="solutions__item_visible"> 
                                     <i class="solutions__icon icon icons-font__indexComplex_2"></i><a href="catalog-complex.html" class="solutions__link">Ресторанам</a>
@@ -279,7 +284,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="solutions__item_wrap cell-4">
+                        <li class="solutions__item_wrap cell-4 cell-12-sm">
                             <div class="solutions__item">
                                 <div class="solutions__item_visible"> 
                                     <i class="solutions__icon icon icons-font__indexComplex_3"></i><a href="catalog-complex.html" class="solutions__link">Торговые центры, магазины</a>
@@ -292,7 +297,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="solutions__item_wrap cell-4">
+                        <li class="solutions__item_wrap cell-4 cell-12-sm">
                             <div class="solutions__item">
                                 <div class="solutions__item_visible"> 
                                     <i class="solutions__icon icon icons-font__indexComplex_4"></i><a href="catalog-complex.html" class="solutions__link">Для дома</a>
@@ -305,7 +310,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="solutions__item_wrap cell-4">
+                        <li class="solutions__item_wrap cell-4 cell-12-sm">
                             <div class="solutions__item">
                                 <div class="solutions__item_visible"> 
                                     <i class="solutions__icon icon icons-font__indexComplex_5"></i><a href="catalog-complex.html" class="solutions__link">Спортивным учреждениям</a>
@@ -318,7 +323,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="solutions__item_wrap cell-4">
+                        <li class="solutions__item_wrap cell-4 cell-12-sm">
                             <div class="solutions__item">
                                 <div class="solutions__item_visible"> 
                                     <i class="solutions__icon icon icons-font__indexComplex_6"></i><a href="catalog-complex.html" class="solutions__link">Гос. учреждениям</a>
@@ -331,7 +336,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="solutions__item_wrap cell-4">
+                        <li class="solutions__item_wrap cell-4 cell-12-sm">
                             <div class="solutions__item">
                                 <div class="solutions__item_visible"> 
                                     <i class="solutions__icon icon icons-font__indexComplex_7"></i><a href="catalog-complex.html" class="solutions__link">Бизнес-центры</a>
@@ -344,7 +349,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="solutions__item_wrap cell-4">
+                        <li class="solutions__item_wrap cell-4 cell-12-sm">
                             <div class="solutions__item">
                                 <div class="solutions__item_visible"> 
                                     <i class="solutions__icon icon icons-font__indexComplex_8"></i><a href="catalog-complex.html" class="solutions__link">Культурные объекты</a>
@@ -357,7 +362,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="solutions__item_wrap cell-4">
+                        <li class="solutions__item_wrap cell-4 cell-12-sm">
                             <div class="solutions__item">
                                 <div class="solutions__item_visible"> 
                                     <i class="solutions__icon icon icons-font__indexComplex_9"></i><a href="catalog-complex.html" class="solutions__link">Учебные заведения</a>
@@ -371,10 +376,140 @@
                             </div>
                         </li>
                     </ul>
+                    
+                    <div class="solutions__slider swiper-container hide show-sm" id="index-carousel-mobile-0"> 
+                        <div class="swiper-wrapper"> 
+                            <ul class="solutions__list swiper-slide">
+                                <li class="solutions__item_wrap cell-4 cell-12-sm">
+                                        <div class="solutions__item">
+                                            <div class="solutions__item_visible"> 
+                                                <i class="solutions__icon icon icons-font__indexComplex_1 "></i><a href="complex-card.html" class="solutions__link">Клубам</a>
+                                            </div>
+                                            <ul class="solutions__sub">
+                                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                                <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                                            </ul>
+                                        </div>
+                                </li>
+                                <li class="solutions__item_wrap cell-4 cell-12-sm">
+                                    <div class="solutions__item">
+                                        <div class="solutions__item_visible"> 
+                                            <i class="solutions__icon icon icons-font__indexComplex_2"></i><a href="catalog-complex.html" class="solutions__link">Ресторанам</a>
+                                        </div> 
+                                        <ul class="solutions__sub">
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="solutions__item_wrap cell-4 cell-12-sm">
+                                    <div class="solutions__item">
+                                        <div class="solutions__item_visible"> 
+                                            <i class="solutions__icon icon icons-font__indexComplex_3"></i><a href="catalog-complex.html" class="solutions__link">Торговые центры, магазины</a>
+                                        </div>
+                                        <ul class="solutions__sub">
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="solutions__list swiper-slide"> 
+                                <li class="solutions__item_wrap cell-4 cell-12-sm">
+                                    <div class="solutions__item">
+                                        <div class="solutions__item_visible"> 
+                                            <i class="solutions__icon icon icons-font__indexComplex_4"></i><a href="catalog-complex.html" class="solutions__link">Для дома</a>
+                                        </div> 
+                                        <ul class="solutions__sub">
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="solutions__item_wrap cell-4 cell-12-sm">
+                                    <div class="solutions__item">
+                                        <div class="solutions__item_visible"> 
+                                            <i class="solutions__icon icon icons-font__indexComplex_5"></i><a href="catalog-complex.html" class="solutions__link">Спортивным учреждениям</a>
+                                        </div>  
+                                        <ul class="solutions__sub">
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="solutions__item_wrap cell-4 cell-12-sm">
+                                    <div class="solutions__item">
+                                        <div class="solutions__item_visible"> 
+                                            <i class="solutions__icon icon icons-font__indexComplex_6"></i><a href="catalog-complex.html" class="solutions__link">Гос. учреждениям</a>
+                                        </div>   
+                                        <ul class="solutions__sub">
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="solutions__list swiper-slide"> 
+                                <li class="solutions__item_wrap cell-4 cell-12-sm">
+                                    <div class="solutions__item">
+                                        <div class="solutions__item_visible"> 
+                                            <i class="solutions__icon icon icons-font__indexComplex_7"></i><a href="catalog-complex.html" class="solutions__link">Бизнес-центры</a>
+                                        </div> 
+                                        <ul class="solutions__sub">
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="solutions__item_wrap cell-4 cell-12-sm">
+                                    <div class="solutions__item">
+                                        <div class="solutions__item_visible"> 
+                                            <i class="solutions__icon icon icons-font__indexComplex_8"></i><a href="catalog-complex.html" class="solutions__link">Культурные объекты</a>
+                                        </div> 
+                                        <ul class="solutions__sub">
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="solutions__item_wrap cell-4 cell-12-sm">
+                                    <div class="solutions__item">
+                                        <div class="solutions__item_visible"> 
+                                            <i class="solutions__icon icon icons-font__indexComplex_9"></i><a href="catalog-complex.html" class="solutions__link">Учебные заведения</a>
+                                        </div> 
+                                        <ul class="solutions__sub">
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Бассейны</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Стадионы</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Фитнес</a></li>
+                                            <li class="solutions__sub-item"><a href="complex-card.html" class="solutions__sub-link">Спортивный курорт</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul> 
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div> 
+                        </div> 
+                    </div>
                 </section>
                 <section class="carousel container"> 
                     <h3 class="section-header"><span class="with-tail">Хит продаж</span></h3>
-                    <div class="carousel__wrapper slider" id="carousel-0"> 
+                    <div class="carousel__wrapper template_1 slider" id="index-carousel-0"> 
                         <ul class="product-card__list swiper-wrapper">
                             <li class="product-card product-card_regular swiper-slide">
                                 <form class="product-wrapper product-card__form" action="basket.html" method="post"> 
@@ -517,7 +652,7 @@
                 </section>
                 <section class="carousel container"> 
                     <h3 class="section-header"><span class="with-tail">Горячие новинки</span></h3>
-                    <div class="carousel__wrapper slider" id="carousel-1"> 
+                    <div class="carousel__wrapper template_1 slider" id="index-carousel-1"> 
                             <ul class="product-card__list swiper-wrapper">
                                 <li class="product-card product-card_regular swiper-slide">
                                     <form class="product-wrapper product-card__form" action="basket.html" method="post"> 
@@ -661,7 +796,7 @@
                 <section class="news-section container"> 
                     <h3 class="section-header"><span class="with-tail">Новости</span></h3> 
                     <ul class="news-section__list row is-grid">
-                        <li class="news-item cell-4">   
+                        <li class="news-item cell-4 cell-12-sm">   
                             <div class="news-item__inner">
                                 <a href="news-card.html"
                                     class="news-image__link">
@@ -679,7 +814,7 @@
                                 </div>
                             </div> 
                         </li> 
-                        <li class="news-item cell-4">   
+                        <li class="news-item cell-4 cell-12-sm">   
                             <div class="news-item__inner">
                                 <a href="news-card.html"
                                     class="news-image__link">
@@ -697,7 +832,7 @@
                                 </div>
                             </div> 
                         </li> 
-                        <li class="news-item cell-4">   
+                        <li class="news-item cell-4 cell-12-sm">   
                             <div class="news-item__inner">
                                 <a href="news-card.html"
                                     class="news-image__link">
@@ -724,7 +859,7 @@
                 </section> 
                 <section class="carousel brands container"> 
                     <h3 class="section-header"><span class="with-tail">Нам доверяют</span></h3>
-                    <div class="carousel__wrapper slider" id="carousel-2">    
+                    <div class="carousel__wrapper slider" id="index-carousel-2">    
                         <ul class="brands__list swiper-wrapper">
                             <li class="brands__item swiper-slide">  
                                 <a href="#" class="brands__logo img__relative">
@@ -792,12 +927,12 @@
             <footer class="igroupFooter"> 
                 <div class="container">
                     <div class="row">
-                        <div class="igroupFooter__col cell-2">
+                        <div class="igroupFooter__col cell-2 hide-sm">
                             <div class="logo-wrapper"> 
                                 <img class="igroupFooter__logo" src="images/logo-site_negative.svg" alt="Логотип">
                             </div>
                         </div>
-                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-3">
+                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-3 cell-12-sm">
                             <div class="fcol__title">Каталог</div>
                             <ul class="fcol__list">
                                 <li class="fcol__item"><a href="catalog.html" class="fcol__link">Hifi Оборудование</a></li>
@@ -811,7 +946,7 @@
                                 <li class="fcol__item"><a href="catalog.html" class="fcol__link_to-all">Просмотреть каталог</a></li>
                             </ul>
                         </div>
-                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-2">
+                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-2 cell-12-sm">
                             <div class="fcol__title">Покупателю</div>
                             <ul class="fcol__list">
                                 <li class="fcol__item"><a href="catalog.html" class="fcol__link">Доставка и оплата</a></li>
@@ -819,7 +954,7 @@
                                 <li class="fcol__item"><a href="catalog.html" class="fcol__link_to-all">Политика конфиденциаьности</a></li>
                             </ul>
                         </div>
-                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-2">
+                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-2 cell-12-sm">
                             <div class="fcol__title">Компания</div>
                             <ul class="fcol__list">
                                 <li class="fcol__item"><a href="catalog.html" class="fcol__link">О компании</a></li>
@@ -828,9 +963,9 @@
                                 <li class="fcol__item"><a href="catalog.html" class="fcol__link">Контакты</a></li> 
                             </ul>
                         </div>
-                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-3">
+                        <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-3 cell-12-sm">
                             <ul class="fcol__contacts">
-                                <li><a class="info-big" href="tel:+74951500454">8 495 150-04-54</a>
+                                <li><a class="info-big" class="hover-bottom-underline" href="tel:+74951500454">8 495 150-04-54</a>
                                 </li>
                                 <li><a class="info-big" href="mailto:info@install-group">info@install-group</a>
                                 </li> 
@@ -884,10 +1019,7 @@
     
         <!-- Мобильное сайд-меню 1 -->
         <nav id="mmenu1" data-mmenu-title="Меню">
-            <ul>
-                <a href="/index.html" class="logotype in-mobile">
-                    <img src="assets/logo-icon-only-black.svg" alt="">
-                </a> 
+            <ul> 
                 <li class="mmenu__item"><a href="catalog.html">
                         Демо каталог</a>
                 </li>
@@ -928,32 +1060,25 @@
                 <li class="mobile__additional-info">
                     <div class="phone-call">
                         <div class="phone-call__number">
-                            <a href="tel:+74951500454" class="phone-call__link">8 495 150-04-54</a> 
+                            <a class="phone-call__link hover-bottom-underline" href="tel:+74951500454">8 495 150-04-54</a> 
                         </div>
-                        <a href="tel:+74951500454" class="btn btn-green phone-call__zakazat">Заказать звонок</a>
                     </div> 
-                </li>
-
+                    <a class="btn btn-green phone-call__zakazat" >Заказать звонок</a>
+                </li> 
             </ul>
+            <a href="#mmenu1-close" class="close-mmenu"></a> 
         </nav>
         <!-- /end Мобильное сайд-меню 1 -->
         
         <!-- Мобильное сайд-меню 2 (каталог) -->
         <nav id="mmenu2" data-mmenu-title="Каталог">
-            <ul>
-                <div class="mmenu__header">
-                    Каталог
-                </div>
+            <ul> 
                 <li class="mmenu__item">
                     <a href="#">Hifi Оборудование</a>
-                </li>
-
+                </li> 
                 <li class="mmenu__item"> 
                     <a href="#" class="mmenu__link">Системы трансляции и оповещения</a>
-                    <ul> 
-                        <div class="mmenu__header">
-                            Сигнализации
-                        </div>
+                    <ul>  
                         <a href="#" class="mmenu__link-to-catalog">Перейти в категорию “Системы трансляции и оповещения”</a> 
                         <li>
                             <a href="#">Аксессуары</a> 
@@ -961,7 +1086,7 @@
                         <li>
                             <a href="#">Трансляционные акустические системы</a> 
                         </li> 
-                        <li> 
+                        <li>
                             <a href="#">Трансляционные матрицы</a> 
                         </li> 
                         <li> 
@@ -992,8 +1117,9 @@
                 </li>
                 <li class="mmenu__item"><a href="#">
                     Конференционные системы</a>
-                </li>   
+                </li>  
             </ul>
+            <a href="#mmenu2-close" class="close-mmenu"></a> 
         </nav>
         <!-- /end Мобильное сайд-меню 2 (каталог) -->
 
@@ -1002,54 +1128,48 @@
     <div style="display: none;" id="hidden-content-a">
         <div class="row flex-center">
 
-            <span class="cell-12 title-type-3"> 
+            <span class="cell-12 title-type-3">
                 Заявка на комплексное оснащение
             </span>
-            <div class="push-2 cell-8 post-2 flex-center"> 
-                <p class="font-black">
+            <div class="push-2 cell-8 post-2 push-0-sm cell-12-sm post-0-sm flex-center">
+                <p class="font-black hide-sm">
                     Получите бесплатную консультацию специалиста и
-                    расчет оборудования по телефону <strong> <a href="tel:+74351901243">+7 435 190-12-43</a></strong> или заполните форму </p>
+                    расчет оборудования по телефону <strong>+7 435
+                        190-12-43</strong> или заполните форму </p>
             </div>
         </div>
         <form action="" class="row is-grid">
-            <div class="co-input cell-4">
-                <label class="co-input-label"
-                    for="client_name">Имя</label>
-                <input autocomplete="off" type="text"
-                    id="client_name" name="client[name]" value=""
-                    class="co-input-field">
+            <div class="co-input cell-4 cell-12-sm">
+                <label class="co-input-label" for="client_name">Имя</label>
+                <input autocomplete="off" type="text" id="client_name"
+                    name="client[name]" value="" class="co-input-field">
             </div>
 
-            <div class="co-input cell-4">
-                <label class="co-input-label"
-                    for="client_mail">Email</label>
-                <input autocomplete="off" type="text"
-                    id="client_mail" name="client[mail]" value=""
-                    class="co-input-field">
+            <div class="co-input cell-4 cell-12-sm">
+                <label class="co-input-label" for="client_mail">Email</label>
+                <input autocomplete="off" type="text" id="client_mail"
+                    name="client[mail]" value="" class="co-input-field">
             </div>
 
-            <div class="co-input cell-4">
-                <label class="co-input-label"
-                    for="client_phone">Телефон</label>
-                <input autocomplete="off" type="text"
-                    id="client_phone" name="client[phone]" value=""
-                    class="co-input-field">
+            <div class="co-input cell-4 cell-12-sm">
+                <label class="co-input-label" for="client_phone">Телефон</label>
+                <input autocomplete="off" type="text" id="client_phone"
+                    name="client[phone]" value="" class="co-input-field">
             </div>
-            <div class="co-input cell-4">
+            <div class="co-input cell-4 cell-12-sm">
                 <input type="file" name="file-input_custom"
                     id="file-input_custom">
-                <label for="file-input_custom"
-                    class="file-input__btn">
+                <label for="file-input_custom" class="file-input__btn">
                     <span>Загрузить схему помещения</span></label>
-                <span class="file-input__subtext">если есть, можно от руки</span>
+                <span class="file-input__subtext">если есть, можно от
+                    руки</span>
             </div>
-            <div class="co-input cell-4">
-                <label class="co-input-label"
-                    for="client_phone">Телефон</label>
+            <div class="co-input cell-4 cell-12-sm">
+                <label class="co-input-label" for="client_phone">Телефон</label>
                 <textarea class="co-input-field">
                     </textarea>
             </div>
-            <div class="co-input co-input_centered cell-4">
+            <div class="co-input co-input_centered cell-4 cell-12-sm">
                 <button type="submit"
                     class="news-section__btn btn btn-green2_big">
                     Отправить
@@ -1057,8 +1177,113 @@
             </div>
         </form>
         <div class="super-link row">
-            <span class="super-link__text">Горячие новинки уже у нас!</span> 
+            <span class="super-link__text">Горячие новинки уже у нас!</span>
             <a class="super-link__link" href="#">Просмотреть</a>
+        </div>
+    </div>
+    <div style="display: none;" id="hidden-content-b">
+        Здесь пока пусто
+    </div>
+    <div style="display: none;" id="hidden-content-c">
+        <div class="row flex-center">
+            <div class="slider-controls-holder">
+                <picture> 
+                    <source media="(max-width:480px)" srcset="images/icon_order-success-mobile.svg"> 
+                    <img src="images/icon_order-success.svg" alt="">
+                </picture>
+            </div>
+            <span class="cell-12 title-type-3 hide-sm">
+                Спасибо, заказ успешно оформлен!
+            </span>
+            <span class="cell-12 title-type-3 hide show-sm">
+               Успешная оплата
+            </span>
+            <div class="push-2 cell-8 post-2 push-0-sm cell-12-sm post-0-sm flex-center">
+                <p class="font-black">Наш менеджер свяжется с Вами в близжайшее
+                    время для уточнений деталей заказа</p>
+                <button type="submit"
+                    class="news-section__btn btn btn-green2_big"
+                    data-fancybox-close="" title="Close">
+                    вернуться в магазин
+                </button>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;" id="hidden-content-d">
+        <div class="row flex-center">
+            <div class="slider-controls-holder">
+                
+                <picture> 
+                    <source media="(max-width:480px)" srcset="images/icon_order-fail-mobile.svg"> 
+                    <img src="images/icon_order-fail.svg" alt="">
+                </picture>
+            </div>
+            <span class="cell-12 title-type-3">
+                Неудачный платеж
+            </span>
+            <div class="push-2 cell-8 post-2 push-0-sm cell-12-sm post-0-sm flex-center">
+                <p class="font-black">Попробуйте еще раз или свяжитесь с
+                    менеджером для помощи в оформлении заказа</p>
+                <div class="row is-grid">
+                    <div class="cell-6 cell-12-sm show-flex flex-center"> 
+                        <button type="submit"
+                            class="news-section__btn btn btn-green2_big"
+                            data-fancybox-close="" title="Close">
+                            оформить повторно
+                        </button>
+                    </div>
+                    <div class="cell-6 hide-sm show-flex flex-center"> 
+                        <button type="submit"
+                            class="news-section__btn btn btn-green_big"
+                            data-fancybox-close="" title="Close">
+                            помощь менеджера
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div style="display: none;" id="hidden-content-e">
+
+        <div class="quick-buy col flex-center">
+            <div class="modal-heading title-type-3">Быстрая покупка</div>
+
+            <a href="tovar-card.html" class="product-img__relative">
+                <img class="product-img" src="images/prod/prod_1.jpg"
+                    alt="продукт">
+            </a>
+            <span class="font-black quick-buy__info">
+                Заказаны следующие товары:
+                <b class="quick-buy__info_b">Аудиопроцессоры для
+                    конференций Shure IntelliMix P300-IMX
+                    доступны для заказа</b>
+            </span>
+
+            <span class="font-black quick-buy__info">
+                На общую стоимость: 
+                <b class="quick-buy__info_b"> 699 899.00 тг</b>
+            </span>
+
+            <form action="" method="post">
+                <div class="co-input cell-12">
+                    <label class="co-input-label" for="client_name">Имя:</label>
+                    <input autocomplete="off" type="text" id="client_name"
+                        name="client[name]" value="" class="co-input-field">
+                </div>
+                <div class="co-input cell-12">
+                    <label class="co-input-label co-input-label__required"
+                        for="client_name">Номер
+                        телефона:</label>
+                    <input autocomplete="off" type="text" id="client_name"
+                        name="client[name]" value="" class="co-input-field">
+                </div>
+                <div class="co-input cell-12">
+                    <label class="co-input-label"
+                        for="client_phone">Комментарий:</label>
+                    <textarea
+                        class="co-input-field">                    </textarea>
+                </div>
+            </form>
         </div>
     </div>
     
@@ -1068,9 +1293,9 @@
     <script src="libs/aos/aos.js"></script>
     <script src="libs/mmenu/mmenu-light.js"></script>
     <script src="libs/jquery.fancybox/fancybox.js"></script>
+    <script src="libs/rangeSlider/ion.rangeSlider.js"></script>
 
-    <!-- <script src="js/common.js"></script> 
-    <script src="js/index.js"></script> -->
+    <!-- <script src="js/main.js"></script>  -->
     <script src="js/main.min.js"></script>
 </body>
 

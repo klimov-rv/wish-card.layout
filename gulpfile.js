@@ -66,9 +66,8 @@ const cssBundle = () =>
         .pipe(browserSync.stream()) 
 
 function scripts() {
-    return src([ 
-        'app/js/index.js',
-        'app/js/common.js'
+    return src([  
+        'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -82,24 +81,15 @@ function build() {
         'app/css/style.min.css',
         'app/fonts/**/*',
         'app/js/main.min.js',
-        'app/_fonts.css',
-        'app/js/common.js',
-        // Главная
-        'app/js/index.js',
+        'app/_fonts.css', 
         // Каталог
-        'app/scss/catalog.css',
-        'app/js/products.js', 
+        'app/scss/catalog.css', 
         // Страница товара
-        'app/scss/towar-card.css',
-        'app/js/towar.js', 
+        'app/scss/towar-card.css', 
         // О нас
-        'app/scss/about.css',
-        'app/js/about.js', 
+        'app/scss/about.css', 
         // Комплексные
-        'app/scss/complex.css',
-        'app/js/complex.js', 
-        // Портфолио 
-        'app/js/portfolio.js', 
+        'app/scss/complex.css', 
         // Корзина и оформление аказа 
         'app/scss/basket-checkout.css',
         // 'app/scss/catalog.css',
