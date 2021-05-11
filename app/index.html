@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,7 @@
     
 </head>
 
-<body class="template-is-index">
+<body id="top-anchor" class="template-is-index">
     <div id="page">
         <header class="site-header">
             <div class="site-header__top container">   
@@ -100,7 +100,7 @@
                         <li class="header-menu__item"><a href="news.html">Новости</a></li>
                         <li class="header-menu__item"><a href="contact.html">Контакты</a></li>  
                         <li class="header-menu__item basket">
-                            <a class="hover-bottom-underline" href="tel:+74951500454">+7 495 150-04-54</a> 
+                            <a class="tel-icon-in-header" href="tel::+74951500454"> </a> 
                             <a href="basket.html" class="basket__widget icon-cart">
                                 <div class="icon">
                                     <div class="center_icon">
@@ -965,7 +965,7 @@
                         </div>
                         <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-3 cell-12-sm">
                             <ul class="fcol__contacts">
-                                <li><a class="info-big" class="hover-bottom-underline" href="tel:+74951500454">8 495 150-04-54</a>
+                                <li><a class="info-big hover-bottom-underline" href="tel:+74951500454">8 495 150-04-54</a>
                                 </li>
                                 <li><a class="info-big" href="mailto:info@install-group">info@install-group</a>
                                 </li> 
@@ -1009,8 +1009,16 @@
                           </ul>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="push-2 cell-7 push-0-sm cell-12-sm">
+                            <div class="copy-site"> 
+                                Веб-сайт www.sli.kz носит исключительно информационный характер и ни при каких условиях не является публичной офертой. <br>
+                                © 2004-2021 ТОО "Звук.Свет.Инсталляция". Все права защищены.
+                            </div> 
+                        </div>
+                    </div>
                     
-                    <div type="button" class="js-scroll_top scroll_top">
+                    <div id="js-scroll_top" class="scroll_top">
                     </div> 
                 </div> 
             </footer>
@@ -1124,7 +1132,6 @@
         <!-- /end Мобильное сайд-меню 2 (каталог) -->
 
     <!-- всплывающие окна -->
-    
     <div style="display: none;" id="hidden-content-a">
         <div class="row flex-center">
 
@@ -1185,7 +1192,7 @@
         Здесь пока пусто
     </div>
     <div style="display: none;" id="hidden-content-c">
-        <div class="row flex-center">
+        <div class="row flex-center order-success">
             <div class="slider-controls-holder">
                 <picture> 
                     <source media="(max-width:480px)" srcset="images/icon_order-success-mobile.svg"> 
@@ -1285,15 +1292,16 @@
                 </div>
             </form>
         </div>
-    </div>
-    
+    </div>  
     <!-- /end всплывающие окна -->
+
     <script src="libs/jquery/jquery.js"></script>
     <script src="libs/swiper/swiper.min.js"></script>
     <script src="libs/aos/aos.js"></script>
     <script src="libs/mmenu/mmenu-light.js"></script>
     <script src="libs/jquery.fancybox/fancybox.js"></script>
     <script src="libs/rangeSlider/ion.rangeSlider.js"></script>
+    <script src="libs/smoothScroll/smoothscroll.min.js"></script> 
 
     <!-- <script src="js/main.js"></script>  -->
     <script src="js/main.min.js"></script>

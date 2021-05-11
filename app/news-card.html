@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
 
 </head>
 
-<body class="template-news-card">
+<body id="top-anchor" class="template-news-card">
     <div id="page">
         <header class="site-header">
             <div class="site-header__top container">   
@@ -99,7 +99,7 @@
                         <li class="header-menu__item"><a href="news.html">Новости</a></li>
                         <li class="header-menu__item"><a href="contact.html">Контакты</a></li>  
                         <li class="header-menu__item basket">
-                            <a class="hover-bottom-underline" href="tel:+74951500454">+7 495 150-04-54</a> 
+                            <a class="tel-icon-in-header" href="tel::+74951500454"> </a> 
                             <a href="basket.html" class="basket__widget icon-cart">
                                 <div class="icon">
                                     <div class="center_icon">
@@ -177,7 +177,7 @@
                 </section>
                 <section class="container">
                     <div class="row is-grid"> 
-                        <div class="push-2 cell-8 post-2 push-0-sm cell-12-sm post-0-sm"> 
+                        <div class="flex-center-xs push-2 cell-8 post-2 push-0-sm cell-12-sm post-0-sm"> 
                             <div class="user-content">
                                 <h1 class="content-header"> Скидки на проекционное и интерактивное оборудование название будет в три строки </h1>
 
@@ -198,12 +198,24 @@
                                 <p class="font-standart">
                                     quip ex ea commodo consequat. magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali
                                 </p>
-                            </div>
-                            
-                            <div class="row">
+                            </div> 
+                            <div class="row flex-center-xs">
                                 <div class="soc-block">
                                     Поделиться в соцсетях
                                 </div>
+                                <div class="hide-xs"> 
+                                    <a href="#" class="soc-share-icon">
+                                        <img src="images/icon__share-whatsup.svg" alt="">
+                                    </a>
+                                    <a href="#" class="soc-share-icon">
+                                        <img src="images/icon__share-fb.svg" alt="">
+                                    </a>
+                                    <a href="#" class="soc-share-icon">
+                                        <img src="images/icon__share-insta.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="soc-block_subicons row hide show-flex-xs flex-center flex-between-xs"> 
                                 <a href="#" class="soc-share-icon">
                                     <img src="images/icon__share-whatsup.svg" alt="">
                                 </a>
@@ -260,7 +272,7 @@
                     </div>
                     <div class="igroupFooter__fcol igroupFooter__fcol_padd cell-3 cell-12-sm">
                         <ul class="fcol__contacts">
-                            <li><a class="info-big" class="hover-bottom-underline" href="tel:+74951500454">8 495 150-04-54</a>
+                            <li><a class="info-big hover-bottom-underline" href="tel:+74951500454">8 495 150-04-54</a>
                             </li>
                             <li><a class="info-big" href="mailto:info@install-group">info@install-group</a>
                             </li> 
@@ -305,7 +317,7 @@
                     </div>
                 </div>
                 
-                <div type="button" class="js-scroll_top scroll_top">
+                <div id="js-scroll_top" class="scroll_top">
                 </div> 
             </div> 
         </footer>
@@ -480,7 +492,7 @@
         Здесь пока пусто
     </div>
     <div style="display: none;" id="hidden-content-c">
-        <div class="row flex-center">
+        <div class="row flex-center order-success">
             <div class="slider-controls-holder">
                 <picture> 
                     <source media="(max-width:480px)" srcset="images/icon_order-success-mobile.svg"> 
@@ -589,6 +601,7 @@
     <script src="libs/mmenu/mmenu-light.js"></script>
     <script src="libs/jquery.fancybox/fancybox.js"></script>
     <script src="libs/rangeSlider/ion.rangeSlider.js"></script>
+    <script src="libs/smoothScroll/smoothscroll.min.js"></script> 
 
     <!-- <script src="js/main.js"></script>  --> 
     <script src="js/main.min.js"></script>

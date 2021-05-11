@@ -55,7 +55,7 @@ $(window).load(function () {
       evnt.preventDefault();
       drawer2.close();
     });
- 
+
   // всплывахи
   $('[data-fancybox]').fancybox({
     youtube: {
@@ -68,7 +68,7 @@ $(window).load(function () {
   });
 
   //	шапка
-  const headerGap = document.querySelector(".site-header").offsetHeight - 51; 
+  const headerGap = document.querySelector(".site-header").offsetHeight - 51;
   const FollowScrollMenu = menuContainer => {
     let lastScrollPosition = window.pageYOffset;
     window.addEventListener('scroll', () => {
@@ -139,7 +139,7 @@ function galleryInit(galleryThumbs, galleryMain) {
     speed: 200,
     loop: false,
     spaceBetween: 0,
-    
+
     breakpoints: {
       0: {
         pagination: {
@@ -153,16 +153,16 @@ function galleryInit(galleryThumbs, galleryMain) {
           clickable: true,
         },
       },
-      768: { 
+      768: {
         pagination: {
           el: galleryMain + "  .swiper-pagination",
           clickable: true,
         },
       },
       1024: {
-        slidesPerView: 1, 
+        slidesPerView: 1,
       }
-    } 
+    }
   });
 
   galleryTop.on("transitionEnd", function (e) {
@@ -247,11 +247,11 @@ if ($(window).width() < 768) {
 }
 
 // кнопка открытия фильтра на мобилке
-$('.filters-sm-button').on('click', function(e) { 
-  $('.collection-filter').toggleClass('opened'); 
+$('.filters-sm-button').on('click', function (e) {
+  $('.collection-filter').toggleClass('opened');
 });
-$('.sort-sm-button').on('click', function(e) { 
-  $('.collection-sort').toggleClass('opened'); 
+$('.sort-sm-button').on('click', function (e) {
+  $('.collection-sort').toggleClass('opened');
 });
 
 // из portfolio.js 
@@ -267,10 +267,10 @@ if (document.getElementById('portfolioSlider') !== null) {
       nextEl: '.slider-controls-holder .swiper-button-next',
       prevEl: '.slider-controls-holder .swiper-button-prev',
     },
-    
+
     breakpoints: {
       0: {
-        slidesPerView: 1, 
+        slidesPerView: 1,
         pagination: {
           el: '.slider-controls-holder .swiper-pagination',
           clickable: true,
@@ -278,7 +278,7 @@ if (document.getElementById('portfolioSlider') !== null) {
         navigation: false
       },
       420: {
-        slidesPerView: 1,  
+        slidesPerView: 1,
         pagination: {
           el: '.slider-controls-holder .swiper-pagination',
           clickable: true,
@@ -286,12 +286,12 @@ if (document.getElementById('portfolioSlider') !== null) {
         navigation: false
       },
       1024: {
-        slidesPerView: 1, 
+        slidesPerView: 1,
       }
     }
   });
 }
- 
+
 // из about.js 
 
 toggleDropDown("js-accordion", "is-opened");
@@ -312,9 +312,9 @@ if (document.getElementById('about-carousel-0') !== null) {
       nextEl: '#about-carousel-0 .swiper-button-next',
       prevEl: '#about-carousel-0 .swiper-button-prev',
     },
-    
+
   });
-} 
+}
 
 if (document.getElementById('about-carousel-1') !== null) {
   var aboutSlider1 = new Swiper('#about-carousel-1', {
@@ -348,7 +348,7 @@ if (document.getElementById('about-carousel-1') !== null) {
 // из complex.js 
 
 if (document.getElementById('complex-card-carousel-2') !== null) {
-  
+
   var complexSlider2 = new Swiper('#complex-card-carousel-2', {
     spaceBetween: 10,
     loop: true,
@@ -377,7 +377,7 @@ if (document.getElementById('complex-card-carousel-2') !== null) {
   });
 }
 if (document.getElementById('carousel-1') !== null) {
-  
+
   var carouselSlider1 = new Swiper('#carousel-1', {
     spaceBetween: 30,
     loop: true,
@@ -410,15 +410,17 @@ if (document.getElementById('carousel-1') !== null) {
 
 toggleDropDown("subcategory", "is-sub-active");
 toggleDropDown("js-filter-opener", "is-filter-open");
+if ($(".js-range-slider").length) {
+  $(".js-range-slider").ionRangeSlider({
+    skin: "big",
+    type: "double",
+    force_edges: true,
+    hide_min_max: true,
+    hide_from_to: true,
+    block: false
+  });
+}
 
-$(".js-range-slider").ionRangeSlider({
-  skin: "big",
-  type: "double",
-  force_edges: true,
-  hide_min_max: true,
-  hide_from_to: true,
-  block: false
-});
 
 // из towar.js
 
@@ -546,7 +548,7 @@ if (document.getElementById('index-carousel-1') !== null) {
       }
     }
   });
-} 
+}
 
 if (document.getElementById('index-carousel-2') !== null) {
   var brandSlider1 = new Swiper('#index-carousel-2', {
@@ -591,7 +593,17 @@ if (document.getElementById('index-carousel-mobile-0') !== null) {
       420: {
         slidesPerView: 1,
         spaceBetween: 30,
-      }, 
+      },
     }
+  });
+}
+
+// scroll to Top 
+
+if (document.getElementById('top-anchor') !== null) {
+  var toTop = document.querySelector('#top-anchor');
+  document.getElementById('js-scroll_top').addEventListener('click', function (e) {
+    e.preventDefault();
+    toTop.scrollIntoView({ behavior: 'smooth' });
   });
 }

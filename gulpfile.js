@@ -42,8 +42,7 @@ function libs() {
 }
 
 const cssBundle = () =>
-    src([
-        'app/_fonts.css',
+    src([ 
         'app/scss/normalise.css',
         'app/scss/spider.css',
 

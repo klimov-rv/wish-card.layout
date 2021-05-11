@@ -292,6 +292,18 @@ button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focus
 }
 
 /**
+   * Убираем outline всё равно)))
+   */
+
+::focus-visible {
+  outline: 0px dotted;
+}
+:focus {
+  outline: 0px dotted;
+}
+
+
+/**
    * Correct the padding in Firefox.
    */
 
@@ -3541,8 +3553,4 @@ output {
 .row-padd {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-::focus-visible {
-  outline: 0px dotted;
 }

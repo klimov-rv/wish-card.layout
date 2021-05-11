@@ -1,341 +1,3 @@
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-ExtraBold.eot');
-    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-        url('fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-ExtraBold.woff') format('woff'),
-        url('fonts/Gilroy-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Heavy.eot');
-    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
-        url('fonts/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-Heavy.woff') format('woff'),
-        url('fonts/Gilroy-Heavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-LightItalic.eot');
-    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
-        url('fonts/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-LightItalic.woff') format('woff'),
-        url('fonts/Gilroy-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-ThinItalic.eot');
-    src: local('Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
-        url('fonts/Gilroy-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-ThinItalic.woff') format('woff'),
-        url('fonts/Gilroy-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-BlackItalic.eot');
-    src: local('Gilroy Black Italic'), local('Gilroy-BlackItalic'),
-        url('fonts/Gilroy-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-BlackItalic.woff') format('woff'),
-        url('fonts/Gilroy-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-BoldItalic.eot');
-    src: local('Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
-        url('fonts/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-BoldItalic.woff') format('woff'),
-        url('fonts/Gilroy-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-SemiBold.eot');
-    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
-        url('fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-SemiBold.woff') format('woff'),
-        url('fonts/Gilroy-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-UltraLightItalic.eot');
-    src: local('Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
-        url('fonts/Gilroy-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-UltraLightItalic.woff') format('woff'),
-        url('fonts/Gilroy-UltraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-SemiBoldItalic.eot');
-    src: local('Gilroy SemiBold Italic'), local('Gilroy-SemiBoldItalic'),
-        url('fonts/Gilroy-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-SemiBoldItalic.woff') format('woff'),
-        url('fonts/Gilroy-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Light.eot');
-    src: local('Gilroy Light'), local('Gilroy-Light'),
-        url('fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-Light.woff') format('woff'),
-        url('fonts/Gilroy-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-MediumItalic.eot');
-    src: local('Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
-        url('fonts/Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-MediumItalic.woff') format('woff'),
-        url('fonts/Gilroy-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-ExtraBoldItalic.eot');
-    src: local('Gilroy ExtraBold Italic'), local('Gilroy-ExtraBoldItalic'),
-        url('fonts/Gilroy-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-ExtraBoldItalic.woff') format('woff'),
-        url('fonts/Gilroy-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Regular.eot');
-    src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-Regular.woff') format('woff'),
-        url('fonts/Gilroy-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-HeavyItalic.eot');
-    src: local('Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
-        url('fonts/Gilroy-HeavyItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-HeavyItalic.woff') format('woff'),
-        url('fonts/Gilroy-HeavyItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Medium.eot');
-    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-Medium.woff') format('woff'),
-        url('fonts/Gilroy-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-RegularItalic.eot');
-    src: local('Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
-        url('fonts/Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-RegularItalic.woff') format('woff'),
-        url('fonts/Gilroy-RegularItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-UltraLight.eot');
-    src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
-        url('fonts/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-UltraLight.woff') format('woff'),
-        url('fonts/Gilroy-UltraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Bold.eot');
-    src: local('Gilroy Bold'), local('Gilroy-Bold'),
-        url('fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-Bold.woff') format('woff'),
-        url('fonts/Gilroy-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Thin.eot');
-    src: local('Gilroy Thin'), local('Gilroy-Thin'),
-        url('fonts/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-Thin.woff') format('woff'),
-        url('fonts/Gilroy-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Black.eot');
-    src: local('Gilroy Black'), local('Gilroy-Black'),
-        url('fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-Black.woff') format('woff'),
-        url('fonts/Gilroy-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ig';
-    src:  url('fonts/ig.eot?mp96cc');
-    src:  url('fonts/ig.eot?mp96cc#iefix') format('embedded-opentype'),
-      url('fonts/ig.ttf?mp96cc') format('truetype'),
-      url('fonts/ig.woff?mp96cc') format('woff'),
-      url('fonts/ig.svg?mp96cc#ig') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icons-font"], [class*=" icons-font"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'ig' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icons-font__aboutUs_1:before {
-    content: "\e900"; 
-  }
-  .icons-font__aboutUs_2:before {
-    content: "\e901"; 
-  }
-  .icons-font__aboutUs_3:before {
-    content: "\e902"; 
-  }
-  .icons-font__aboutUs_4:before {
-    content: "\e903"; 
-  }
-  .icons-font__aboutUs_5:before {
-    content: "\e904"; 
-  }
-  .icons-font__aboutUs_6:before {
-    content: "\e905"; 
-  }
-  .icons-font__aboutUs_7:before {
-    content: "\e906"; 
-  }
-  .icons-font__aboutUs_8:before {
-    content: "\e907"; 
-  }
-  .icons-font__catalog_0:before {
-    content: "\e91d"; 
-  }
-  .icons-font__catalog_1:before {
-    content: "\e908"; 
-  }
-  .icons-font__catalog_3:before {
-    content: "\e909"; 
-  }
-  .icons-font__catalog_4:before {
-    content: "\e90a"; 
-  }
-  .icons-font__catalog_5:before {
-    content: "\e90b"; 
-  }
-  .icons-font__catalog_6:before {
-    content: "\e90c"; 
-  }
-  .icons-font__catalog_7:before {
-    content: "\e90d"; 
-  }
-  .icons-font__catalog_8:before {
-    content: "\e90e"; 
-  }
-  .icons-font__catalog_9:before {
-    content: "\e90f"; 
-  }
-  .icons-font__catalog_10:before {
-    content: "\e910"; 
-  }
-  .icons-font__catalog_11:before {
-    content: "\e911"; 
-  }
-  .icons-font__catalog_12:before {
-    content: "\e912"; 
-  }
-  .icons-font__catalog_13:before {
-    content: "\e913"; 
-  }
-  .icons-font__indexComplex_1:before {
-    content: "\e914"; 
-  }
-  .icons-font__indexComplex_2:before {
-    content: "\e915"; 
-  }
-  .icons-font__indexComplex_3:before {
-    content: "\e916"; 
-  }
-  .icons-font__indexComplex_4:before {
-    content: "\e917"; 
-  }
-  .icons-font__indexComplex_5:before {
-    content: "\e918"; 
-  }
-  .icons-font__indexComplex_6:before {
-    content: "\e919"; 
-  }
-  .icons-font__indexComplex_7:before {
-    content: "\e91a"; 
-  }
-  .icons-font__indexComplex_8:before {
-    content: "\e91b"; 
-  }
-  .icons-font__indexComplex_9:before {
-    content: "\e91c"; 
-  }
-  
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -1031,6 +693,18 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-mo
 button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
+
+/**
+   * Убираем outline всё равно)))
+   */
+
+::focus-visible {
+  outline: 0px dotted;
+}
+:focus {
+  outline: 0px dotted;
+}
+
 
 /**
    * Correct the padding in Firefox.
@@ -4036,9 +3710,6 @@ output {
   padding-right: 15px;
 }
 
-::focus-visible {
-  outline: 0px dotted;
-}
 /**
  * Swiper 5.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -7944,7 +7615,15 @@ textarea.co-input-field {
 .btn-green_big, .btn-green2_big {
   font-weight: bold;
   font-size: 16px;
-  padding: 25px 30px;
+  padding: 3px 35px;
+  min-height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100px;
 }
 
 .btn-green_big:hover {
@@ -8157,6 +7836,7 @@ input[type="email"].inpt-email {
   margin: 10px 0;
   outline: none;
 }
+
 .call-back {
   text-align: center;
   display: -webkit-box;
@@ -8173,15 +7853,19 @@ input[type="email"].inpt-email {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .call-back-title {
   margin-bottom: 20px;
 }
+
 .call-back-row {
   width: 275px;
 }
+
 .call-back .submit {
   margin-top: 20px;
 }
+
 .phone-call {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8383,7 +8067,9 @@ input[type="email"].inpt-email {
 }
 
 .site-header_scrolled .site-header__logo_negative {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -8407,6 +8093,19 @@ input[type="email"].inpt-email {
   height: 56px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+.header-menu .site-header__logo_negative {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-menu .site-header__logo_negative img {
+  height: 40px;
 }
 
 .header-menu__item {
@@ -8457,17 +8156,29 @@ input[type="email"].inpt-email {
 }
 
 .site-header_scrolled .header-menu__item.basket {
-  background: url("../images/icon_call-white.svg") no-repeat 10px;
   width: auto;
-  padding-left: 35px;
+  padding-left: 10px;
   padding-right: 10px;
   margin-right: 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.tel-icon-in-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: url("../images/icon_call-white.svg") no-repeat center center transparent;
+}
+
+.tel-icon-in-header:hover {
+  background-image: url("../images/icon_call-green.svg");
 }
 
 .basket__widget.icon-cart {
@@ -8557,7 +8268,7 @@ input[type="email"].inpt-email {
 }
 
 .content {
-  margin-top: 185px;
+  padding-top: 185px;
   background: url("../images/bg-site.jpg") repeat-y top center / 100%;
 }
 
@@ -8573,6 +8284,22 @@ input[type="email"].inpt-email {
 .main-wrapper .complex-card_gray {
   background-color: #EFF1F5;
   padding: 15px;
+}
+
+.copy-site {
+  padding: 35px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  opacity: 0.5;
 }
 
 .complex-card .with-buttons .btn {
@@ -9244,6 +8971,11 @@ input[type="email"].inpt-email {
   padding: 15px;
 }
 
+.soc-block_subicons { 
+  max-width: 229px;
+  margin: 10px auto;
+}
+
 .soc-share-icon {
   margin-right: 8px;
 }
@@ -9448,7 +9180,7 @@ input[type="email"].inpt-email {
 }
 
 .slider_full img {
-  width: 100%;
+  width: auto;
 }
 
 .product-card_regular_full .product-card__info {
@@ -10137,6 +9869,8 @@ span.pagination-link {
   height: 180px;
   border-radius: 10px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .news-item__info {
@@ -10205,7 +9939,9 @@ span.pagination-link {
   padding-bottom: 40px;
 }
 
-.igroupFooter__col {}
+.igroupFooter>.container {
+  position: relative;
+}
 
 .logo-wrapper {
   display: -webkit-box;
@@ -10387,8 +10123,8 @@ span.pagination-link {
   max-width: 875px;
 }
 
-#hidden-content-c .btn-green2_big {
-  margin: 0 auto;
+.order-success .btn.btn-green2_big {
+  margin: 30px auto;
 }
 
 #hidden-content-c .slider-controls-holder {
@@ -10467,7 +10203,21 @@ span.pagination-link {
   color: #FF353E;
 }
 
-.js-scroll_top.scroll_top {}
+.scroll_top {
+  height: 50px;
+  width: 50px;
+  background: url("../images/icon_scroll_up.svg") no-repeat center center / cover transparent;
+}
+
+#js-scroll_top.scroll_top {
+  height: 50px;
+  width: 50px;
+  background: url("../images/icon_scroll_up.svg") no-repeat center center / cover transparent;
+  position: absolute;
+  top: -39px;
+  right: 0;
+  z-index: 5;
+}
 #page {}
 
 #mmenu1 {}
@@ -10666,13 +10416,35 @@ span.pagination-link {
 
 @media screen and (max-width: 1600px) {}
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    #page {
+        overflow: hidden;
+    }
+}
 
 @media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 920px) {}
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
+    .breadcrumb {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+    .breadcrumb__wrapper ul li {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
+    }
+    .scroll_top {
+        display: none;
+    }
     .site-header__top {
         background: url("../images/bg-header-mobile.jpg") repeat-x bottom left / cover white;
     }
@@ -10896,11 +10668,25 @@ span.pagination-link {
         -o-text-overflow: ellipsis;
            text-overflow: ellipsis;
     }
+    .template-production .section-header {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
     .template-towar .with-tail, .template-production .with-tail {
         overflow: hidden;
         -o-text-overflow: ellipsis;
            text-overflow: ellipsis;
         max-height: 62px;
+        margin-top: 24px;
+    }
+    .gallery-main {
+        margin-top: 30px;
+    }
+    .gallery__item.swiper-slide {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
     .product__code {
         top: auto;
@@ -11152,11 +10938,11 @@ span.pagination-link {
         display: -ms-flexbox;
         display: flex;
         padding-left: 10px;
-        white-space: nowrap; 
-        -webkit-box-align: center; 
-            -ms-flex-align: center; 
+        white-space: nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
                 align-items: center;
-    } 
+    }
     .cart-subbuttons {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -11191,14 +10977,76 @@ span.pagination-link {
         background-position: center center;
         padding: 25px;
     }
-    .slider-controls-holder > .slider {
-        width: 100%; 
-        -ms-flex-preferred-size: 100%; 
+    .slider-controls-holder>.slider {
+        width: 100%;
+        -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
     }
 }
 
-@media screen and (max-width: 640px) {}
+@media screen and (max-width: 640px) {
+    .solutions__link {
+        text-align: center;
+    }
+    .font-standart {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .compare-table {
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .compare-table .t-row-like {
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
+    }
+    .compare-table .t-row-like .t-cell-like {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+    }
+    .content {
+        padding-top: 145px;
+    }
+    .promo-slider__text_wrapper {
+        padding: 248px 55px 80px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    #promoSlider {
+        border-radius: 0;
+    }
+    .promo__wrap {
+        padding: 0;
+    }
+    .promo-slider__img {
+        top: 30%;
+    }
+    .promo-slider__text {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .promo-slider__btn {
+        margin: 0 auto;
+    }
+    .main-wrapper section.carousel.container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .carousel__wrapper {}
+}
 
 @media screen and (max-width: 480px) {
     .co-input input, .co-input textarea {
@@ -11226,13 +11074,7 @@ span.pagination-link {
         height: 70px;
     }
     .content {
-        margin-top: 125px;
-    }
-    .promo__wrap {
-        padding: 0;
-    }
-    #promoSlider {
-        border-radius: 0;
+        padding-top: 125px;
     }
     #promoSlider .promo-slider__controls {
         left: 0;
@@ -11241,29 +11083,6 @@ span.pagination-link {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-    }
-    .promo-slider__img {
-        top: 30%;
-    }
-    .promo-slider__text {
-        text-align: center;
-        margin-bottom: 15px;
-    }
-    .promo-slider__text_wrapper {
-        padding: 248px 55px 80px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-    .promo-slider__btn {
-        margin: 0 auto;
     }
     .section-header {
         position: relative;
@@ -11344,6 +11163,9 @@ span.pagination-link {
 }
 
 @media screen and (max-width: 340px) {
+    .solutions__link {
+        font-size: 11px;
+    }
     .fancybox-content {
         padding: 20px;
     }
