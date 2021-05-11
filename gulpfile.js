@@ -42,7 +42,7 @@ function libs() {
 }
 
 const cssBundle = () =>
-    src([ 
+    src([
         'app/scss/normalise.css',
         'app/scss/spider.css',
 
@@ -53,57 +53,45 @@ const cssBundle = () =>
         'app/scss/mmenu-light.css',
 
         'app/scss/theme.css',
-        'app/scss/index.css',
         'app/scss/responsive.css'
-    ]) 
-        .pipe(concat('style.min.css'))
-        .pipe(autoprefixer({
-            overrideBrowserslist: ['last 10 version'],
-            grid: true
-        }))
-        .pipe(dest('app/css'))
-        .pipe(browserSync.stream()) 
+    ])
+    .pipe(concat('style.min.css'))
+    .pipe(autoprefixer({
+        overrideBrowserslist: ['last 10 version'],
+        grid: true
+    }))
+    .pipe(dest('app/css'))
+    .pipe(browserSync.stream())
 
 function scripts() {
-    return src([  
-        'app/js/main.js'
-    ])
-    .pipe(concat('main.min.js'))
-    .pipe(uglify())
-    .pipe(dest('app/js'))
-    .pipe(browserSync.stream())
-} 
+    return src([
+            'app/js/main.js'
+        ])
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(dest('app/js'))
+        .pipe(browserSync.stream())
+}
 
 function build() {
     return src([
-        // общие скрипты и стили
-        'app/css/style.min.css',
-        'app/fonts/**/*',
-        'app/js/main.min.js',
-        'app/_fonts.css', 
-        // Каталог
-        'app/scss/catalog.css', 
-        // Страница товара
-        'app/scss/towar-card.css', 
-        // О нас
-        'app/scss/about.css', 
-        // Комплексные
-        'app/scss/complex.css', 
-        // Корзина и оформление аказа 
-        'app/scss/basket-checkout.css',
-        // 'app/scss/catalog.css',
-        'app/*.html' 
-    ], { base: 'app' })
+            // общие скрипты и стили
+            'app/css/style.min.css',
+            'app/fonts/**/*',
+            'app/js/main.min.js',
+            'app/_fonts.css',
+            'app/*.html'
+        ], { base: 'app' })
         .pipe(dest('dist'))
 }
 
 function watching() {
-    watch(['app/scss/**/*.scss'], cssBundle);
+    watch(['app/scss/**/*.css'], cssBundle);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/*.html']).on('change', browserSync.reload);
 }
- 
-exports.cssBundle = cssBundle; 
+
+exports.cssBundle = cssBundle;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
