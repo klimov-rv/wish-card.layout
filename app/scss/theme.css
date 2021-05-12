@@ -5,8 +5,10 @@
     --border-radius-2: 7px;
     --color_bg: #3F0A66;
     --color_text: #FFFFFF;
+    --input_bg: transparent;
+    --grid_width: 1220px;
     --swiper-navigation-size: 28px;
-    --swiper-theme-color: #419A28;
+    --swiper-theme-color: rgba(255, 255, 255, 0.7);
 }
 
 body {
@@ -17,19 +19,10 @@ body {
     font-weight: 300;
     font-size: 20px;
     line-height: 27px;
-    background: linear-gradient(360deg, #3F0A66 0%, #CA1A6B 100%);
-    /* 
-background: linear-gradient(360deg, #3F0A66 0%, rgba(63, 10, 102, 0) 100%); 
+}
 
-background: linear-gradient(360deg, #3F0A66 0%, rgba(63, 10, 102, 0) 100%); 
-
-background: linear-gradient(0.02deg, rgba(172, 22, 105, 0) 0.01%, rgba(63, 10, 102, 0.4) 99.99%); 
-
-background: linear-gradient(0.01deg, rgba(172, 22, 105, 0) -8.41%, rgba(63, 10, 102, 0.7) 99.99%); 
-
-background: linear-gradient(0.02deg, rgba(172, 22, 105, 0) 0.01%, rgba(63, 10, 102, 0.7) 99.99%); 
-
-background: linear-gradient(0.02deg, rgba(172, 22, 105, 0) 0.01%, rgba(63, 10, 102, 0.7) 99.99%);  */
+.main-wrapper {
+    background-image: repeating-linear-gradient( 360deg, #CA1A6B 110px, #3F0A66 1057px, #CA1A6B 2114px);
 }
 
 button,
@@ -100,17 +93,15 @@ input[type="password"],
 input[type="email"],
 textarea,
 select {
-    font-size: 13px;
-    line-height: 16px;
-    background: #EFF1F5;
-    color: #333333;
+    font-size: 20px;
+    line-height: 1.3em;
+    background: var(--input_bg);
+    color: white;
 }
 
 input {
-    background: #EFF1F5;
-    border: 1px solid #EFF1F5;
+    border-bottom: 1px solid #EFF1F5;
     box-sizing: border-box;
-    border-radius: 4px;
     width: 100%;
 }
 
@@ -197,7 +188,6 @@ textarea.co-input-field {
 }
 
 .btn {
-    height: 30px;
     min-height: 30px;
     width: auto;
     display: flex;
@@ -208,16 +198,13 @@ textarea.co-input-field {
     outline: none;
     font-family: inherit;
     overflow: hidden;
-    border-radius: var(--border-radius-1);
 }
 
-.btn-black_compare {
-    color: #212425;
-    border: 1px solid #212425;
-    background-color: white;
-    background: url("../images/icon-law.svg") no-repeat 17px center / 25px transparent;
+.btn-faded {
+    display: inline-block;
+    background-color: #9957a4;
     font-size: 16px;
-    padding: 25px 30px 25px 55px;
+    padding: 15px 45px;
 }
 
 .btn-black_compare:hover {
@@ -229,7 +216,7 @@ textarea.co-input-field {
     padding-right: 0px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1920px;
+    max-width: var(--grid_width);
 }
 
 input[type="email"].inpt-email {
@@ -243,14 +230,145 @@ input[type="email"].inpt-email {
     outline: none;
 }
 
-.site-header__logo_negative {
-    display: none;
+.site-menu-main {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
-.menu-block-wrapper {}
+.site-menu-main .nav-item a {
+    padding: 20px 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.site-menu-main .nav-item:last-child a {
+    padding-right: 0px;
+}
 
 .font-standart-2 {
     line-height: 28px;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
+.site-header {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(0deg, #3F0A66 0%, #AE166A 100%) no-repeat 0 -150px transparent;
+    transition: all 0.8s;
+    z-index: 999;
+}
+
+.site-header_scrolled {
+    background: linear-gradient(0deg, #3F0A66 0%, #AE166A 100%) no-repeat 0 0 transparent;
+}
+
+.brand-logo img {
+    height: 100px;
+}
+
+.container .site-navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.site-navbar {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-navbar .menu-block-wrapper {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.menu-block {
+    margin-left: auto;
+}
+
+.promo.index {
+    padding-top: 370px;
+    min-height: 1115px;
+    background: url("../images/crystal-ball.png") no-repeat top center transparent;
+}
+
+.about-us__photos-bg {
+    background: url("../images/section2-bg1-photos.png") no-repeat center center transparent;
+    height: 100%;
+    min-height: 760px;
+}
+
+section.history {
+    background: url("../images/section3-bg1-palaroid-photos.png") no-repeat center center transparent;
+    min-height: 1170px;
+}
+
+section.mission {
+    background: url("../images/section4-bg1-book.png") no-repeat center center transparent;
+    min-height: 1170px;
+}
+
+.balance-wheel-bg {
+    background: url("../images/section5-balance-wheel-bg.png") no-repeat center center transparent;
+    min-height: 860px;
+}
+
+.comments__wrap .swiper-container {
+    overflow: visible;
+}
+
+.hero__block {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.hero_slogan {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 80px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.about-us__block-bg {
+    position: relative;
+    z-index: 3;
+}
+
+.about-us__block-text {
+    position: relative;
+    z-index: 5;
+    color: #A51569;
+}
+
+.about-us__block-bg::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: -143px;
+    left: -130px;
+    width: 900px;
+    height: 900px;
+    background: url("../images/section2-bg2__about-text.png") no-repeat top left transparent;
+}
+
+.about-us__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.about-us__text {}
