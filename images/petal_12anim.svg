@@ -1,0 +1,61 @@
+<svg id="petal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 148 413" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+
+
+  <style>
+    .ellipse {
+      opacity: 0;
+    }
+
+    .ellipse:hover {
+      opacity: 1;
+    }
+  </style>
+
+
+  <defs>
+    <linearGradient id="petal-stroke" x1="0" y1="0" x2="75" y2="413" spreadMethod="pad" gradientUnits="userSpaceOnUse">
+      <stop id="petal-stroke-0" offset="0%" stop-color="rgba(255,255,255,0.5)" />
+      <stop id="petal-stroke-1" offset="100%" stop-color="rgba(255,255,255,0)" />
+    </linearGradient>
+  </defs>
+  <path id="petal-fill"
+    d="M73.609500,1.624020C170.816000,121.100000,170.816000,292.398000,73.609500,411.874000C73.348000,412.195000,72.856500,412.193000,72.597600,411.870000C-23.336100,291.953000,-23.336100,121.545000,72.597600,1.628210C72.856500,1.304640,73.348000,1.302590,73.609500,1.624020Z"
+    opacity="0.9" fill="rgb(155,46,180)" stroke="url(#petal-stroke)" stroke-width="1" />
+  <g id="mask-hover" mask="url(#mask-rect)">
+    <ellipse id="mask-rect__ellipse_10" class="ellipse ellipse_10" rx="140.280899" ry="215"
+      transform="matrix(1.72477322952217 0 0 1.46638023435462 73.38536118192646 312.60965377999997)" stroke="none"
+      stroke-width="0" />
+    <ellipse id="mask-rect__ellipse_9" class="ellipse ellipse_9" rx="140.280899" ry="200"
+      transform="matrix(1.72477322952217 0 0 1.46638023435462 73.38536118192646 312.60965377999997)" stroke="none"
+      stroke-width="0" />
+    <ellipse id="mask-rect__ellipse_8" class="ellipse ellipse_8" rx="140.280899" ry="190"
+      transform="matrix(1.72477322952217 0 0 1.46638023435462 73.38536118192646 312.60965377999997)" stroke="none"
+      stroke-width="0" />
+    <ellipse id="mask-rect__ellipse_7" class="ellipse ellipse_7" rx="140.280899" ry="180"
+      transform="matrix(1.72477322952217 0 0 1.46638023435462 73.38536118192646 312.60965377999997)" stroke="none"
+      stroke-width="0" />
+    <ellipse id="mask-rect__ellipse_6" class="ellipse ellipse_6" rx="140.280899" ry="170"
+      transform="matrix(1.72477322952217 0 0 1.46638023435462 73.38536118192646 312.60965377999997)" stroke="none"
+      stroke-width="0" />
+    <ellipse id="mask-rect__ellipse_5" class="ellipse ellipse_5" rx="140.280899" ry="155"
+      transform="matrix(1.72477322952217 0 0 1.46638023435462 73.38536118192646 312.60965377999997)" stroke="none"
+      stroke-width="0" />
+    <ellipse id="mask-rect__ellipse_4" class="ellipse ellipse_4" rx="140.280899" ry="130"
+      transform="matrix(1.72477322952217 0 0 1.46638023435462 73.38536118192646 312.60965377999997)" stroke="none"
+      stroke-width="0" />
+    <ellipse id="mask-rect__ellipse_3" class="ellipse ellipse_3" rx="140.280899" ry="110"
+      transform="matrix(1.72477322952217 0 0 1.46638023435462 73.38536118192646 312.60965377999997)" stroke="none"
+      stroke-width="0" />
+    <ellipse id="mask-rect__ellipse_2" class="ellipse ellipse_2" rx="140.280899" ry="95"
+      transform="matrix(1.72477322952217 0 0 1.46638023435462 73.38536118192646 312.60965377999997)" stroke="none"
+      stroke-width="0" />
+    <ellipse id="mask-rect__ellipse_1" class="ellipse ellipse_1" rx="140.280899" ry="79"
+      transform="matrix(1.72477322952217 0 0 1.46638023435462 73.38536118192646 312.60965377999997)" stroke="none"
+      stroke-width="0" />
+    <mask id="mask-rect" mask-type="luminance">
+      <path id="mask-rect__path"
+        d="M73.609500,1.624020C170.816000,121.100000,170.816000,292.398000,73.609500,411.874000C73.348000,412.195000,72.856500,412.193000,72.597600,411.870000C-23.336100,291.953000,-23.336100,121.545000,72.597600,1.628210C72.856500,1.304640,73.348000,1.302590,73.609500,1.624020Z"
+        opacity="0.9" fill="rgb(155,46,180)" />
+    </mask>
+  </g>
+</svg>
